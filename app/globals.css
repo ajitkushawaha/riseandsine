@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: var(--font-headline);
+  --font-sans: var(--font-sans);
+
+  --color-ink: #060a12;
+  --color-ink-soft: #0c1320;
+  --color-surface: #0f1724;
+  --color-surface-2: #131d2d;
+  --color-accent: #f5be5c;
+  --color-accent-soft: #f3d9a3;
+  --color-line: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink font-sans antialiased text-white;
+    background-image:
+      radial-gradient(circle at top, rgba(245, 190, 92, 0.1), transparent 30%),
+      linear-gradient(180deg, #060a12 0%, #09111b 40%, #060a12 100%);
+  }
+
+  ::selection {
+    background: rgba(245, 190, 92, 0.28);
+    color: #fff8ea;
+  }
+
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    @apply transition-all duration-300;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply px-0 py-24 sm:py-28 lg:py-32;
+  }
+
+  .panel-card {
+    @apply rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 shadow-[0_24px_80px_rgba(0,0,0,0.18)] backdrop-blur-sm sm:p-10;
+  }
+
+  .program-card {
+    @apply flex min-h-[420px] flex-col rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.03))] p-8 shadow-[0_26px_70px_rgba(0,0,0,0.18)] backdrop-blur-sm sm:p-10;
+  }
+
+  .timeline-card {
+    @apply rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 shadow-[0_20px_70px_rgba(0,0,0,0.16)] sm:p-10;
+  }
+
+  .proof-card {
+    @apply rounded-[2rem] border border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(245,190,92,0.14),rgba(255,255,255,0.03)_46%,rgba(255,255,255,0.02))] p-8 shadow-[0_24px_80px_rgba(0,0,0,0.2)] sm:p-10;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center gap-3 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-slate-950 shadow-[0_20px_50px_rgba(245,190,92,0.25)] hover:-translate-y-0.5 hover:bg-accent-soft;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center gap-3 rounded-full border border-white/14 bg-white/[0.05] px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-white hover:-translate-y-0.5 hover:bg-white/[0.09];
+  }
+
+  .button-dark {
+    @apply inline-flex items-center gap-3 rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-white shadow-[0_20px_50px_rgba(15,23,42,0.18)] hover:-translate-y-0.5 hover:bg-slate-800;
+  }
+
+  .form-input {
+    @apply w-full rounded-[1.25rem] border border-slate-200 bg-slate-50 px-5 py-4 text-base text-slate-900 outline-none placeholder:text-slate-400 focus:border-slate-300 focus:bg-white focus:ring-4 focus:ring-amber-100;
+  }
+
+  .dock-button {
+    @apply inline-flex flex-col items-center justify-center gap-1 rounded-2xl border border-white/10 bg-white/[0.05] px-3 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white/72;
+  }
+
+  .dock-button-accent {
+    @apply bg-accent text-slate-950;
+  }
+}
