@@ -14,13 +14,54 @@ const inter = Inter({
   weight: ["400", "500", "600", "700"],
 });
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "DrivingSchool",
+  "name": "Rise n Shine Driving School",
+  "image": "https://risenshinedriving.com/logo.png",
+  "@id": "https://risenshinedriving.com",
+  "url": "https://risenshinedriving.com",
+  "telephone": "+12503172175",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Serving all of Kelowna",
+    "addressLocality": "Kelowna",
+    "addressRegion": "BC",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.888,
+    "longitude": -119.496
+  },
+  "areaServed": [
+      { "@type": "City", "name": "Kelowna" },
+      { "@type": "City", "name": "West Kelowna" },
+      { "@type": "City", "name": "Peachland" },
+      { "@type": "City", "name": "Lake Country" }
+  ],
+  "description": "Premium driving school in Kelowna offering ICBC road test preparation, defensive driving, and professional 1:1 coaching.",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "08:00",
+    "closes": "20:00"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "700"
+  }
+};
+
 export const metadata: Metadata = {
-  title: "Rise & Shine Driving School | Best Car Driving Classes in Ahmedabad",
-  description: "Join Rise & Shine Driving School for professional car driving classes. Certified instructors, flexible timings, doorstep pickup, and affordable packages for beginners in Ahmedabad.",
-  keywords: ["driving school ahmedabad", "car driving classes", "beginner driving course", "female driving instructor", "automatic car training"],
+  title: "Rise n Shine Driving School | Best Driving Lessons in Kelowna, BC",
+  description: "Join Rise n Shine Driving School for expert ICBC road test preparation. Professional driving lessons in Kelowna, West Kelowna, Peachland, and Lake Country. Licensed instructors, dual-control cars, and flexible scheduling.",
+  keywords: ["driving school kelowna", "ICBC road test prep kelowna", "driving lessons west kelowna", "female driving instructor bc", "automatic car training kelowna"],
   openGraph: {
-    title: "Rise & Shine Driving School | Professional Driving Classes",
-    description: "Learn driving with confidence. ISO certified school with doorstep pickup and expert instructors.",
+    title: "Rise n Shine Driving School | Kelowna's Top Driving Lessons",
+    description: "Learn driving with confidence. ICBC certified school with dual-control cars and expert instructors in the Kelowna area.",
     type: "website",
   },
   twitter: {
@@ -35,6 +76,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${poppins.variable} ${inter.variable} font-sans antialiased`}>
         {children}
       </body>

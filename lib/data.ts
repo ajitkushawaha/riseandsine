@@ -1,28 +1,28 @@
 export const galleryImages = [
   {
-    src: "https://risenshinedriving.com/wp-content/uploads/2021/04/Promo-Facebook-News-Feed-Image.jpeg",
-    alt: "Safety First",
-    detail: "Comprehensive road safety guidelines."
+    src: "/gimages/resized-image-Promo-scaled.jpeg",
+    alt: "Rise n Shine dual-control car in Kelowna",
+    detail: "Our dual-control safety vehicles ensure a stress-free learning environment for new drivers in BC."
   },
   {
-    src: "https://risenshinedriving.com/wp-content/uploads/2021/04/Promo-Facebook-News-Feed-Image-1.jpeg",
-    alt: "Basics Mastery",
-    detail: "Fundamental skills for new drivers."
+    src: "/gimages/Promo-Facebook-News-Feed-Image-1.jpeg",
+    alt: "Student learning intersection safety in West Kelowna",
+    detail: "Mastering complex intersections and scanning techniques with our expert instructors."
   },
   {
-    src: "https://risenshinedriving.com/wp-content/uploads/2021/04/Promo-Facebook-News-Feed-Image-2.jpeg",
-    alt: "Mock Exams",
-    detail: "Simulated road tests for confidence."
+    src: "/gimages/Promo-Facebook-News-Feed-Image-2.jpeg",
+    alt: "ICBC Mock Road Test simulation",
+    detail: "Get prepared with our simulated road tests that follow the exact ICBC examiner marking sheets."
   },
   {
-    src: "https://risenshinedriving.com/wp-content/uploads/2021/04/Promo-Facebook-News-Feed-Image-3.jpeg",
-    alt: "Traffic Rules",
-    detail: "Understanding road signs & regulations."
+    src: "/gimages/Promo-Facebook-News-Feed-Image-3.jpeg",
+    alt: "Parallel parking training on Kelowna streets",
+    detail: "Precision parking techniques made simple through our proven step-by-step coaching method."
   },
   {
-    src: "https://risenshinedriving.com/wp-content/uploads/2021/04/Promo-Facebook-News-Feed-Image-4.jpeg",
-    alt: "Parallel Parking",
-    detail: "Precision parking techniques."
+    src: "/gimages/Promo-Facebook-News-Feed-Image-4.jpeg",
+    alt: "Highway driving lessons on Highway 97 BC",
+    detail: "Building confidence for high-speed merging and lane changes on the Okanagan's busiest routes."
   }
 ];
 
@@ -31,7 +31,8 @@ export const blogPosts = [
     id: "alex-passed-his-road-test",
     title: "Alex passed his road test",
     date: "Feb 28, 2023",
-    image: "https://risenshinedriving.com/wp-content/uploads/2023/02/IMG_9772-scaled.jpg",
+    image: "/gallery/IMG_8144-scaled-e1642396804704.jpg",
+    alt: "Alex celebrating his ICBC road test pass with Rise n Shine",
     category: "Road Test",
     successStory: "Alex showed incredible discipline during his 90-minute sessions. By focusing on defensive habits and mirror techniques, he passed his ICBC road test with absolute confidence.",
     instructorAdvice: "Alex focused specifically on the hazard awareness portion of the test, identifying scanning pitfalls and adjusting his speed for conditions."
@@ -40,7 +41,8 @@ export const blogPosts = [
     id: "paigepower-getting-driving-licence",
     title: "Congratulate PaigePower on pass",
     date: "Feb 28, 2023",
-    image: "https://risenshinedriving.com/wp-content/uploads/2023/02/IMG_9759-scaled.jpg",
+    image: "/news/IMG_9759-scaled.jpg",
+    alt: "PaigePower receiving her driver's licence after lessons in Kelowna",
     category: "Licence",
     successStory: "Paige came to us with a need to refine her parking and city intersection management. After only 4 targeted lessons, she secured her driver's licence in first Attempt.",
     instructorAdvice: "Mastering parallel parking in heavy city traffic was the goal. We used our dual-control car to build her confidence in high-pressure scenarios."
@@ -49,16 +51,18 @@ export const blogPosts = [
     id: "arshdeep-singh-passed-test",
     title: "Arshdeep Singh passed his test",
     date: "Feb 28, 2023",
-    image: "https://risenshinedriving.com/wp-content/uploads/2023/02/IMG_9744-scaled.jpg",
+    image: "/news/IMG_9744-scaled.jpg",
+    alt: "Arshdeep Singh with his successful ICBC road test result",
     category: "Road Test",
     successStory: "Arshdeep's dedication to mastering road signs and the rules of the highway paid off. His smooth vehicle control during the final test was highly noted by examiners.",
-    instructorAdvice: "We spent time on the specific road test routes in Ahmedabad to ensure Arshdeep was comfortable with common examiner expectations and road flows."
+    instructorAdvice: "We spent time on the specific ICBC road test routes in Kelowna (including Harvey Ave and Springfield) to ensure Arshdeep was comfortable with common examiner expectations and road flows."
   },
   {
     id: "karen-passed-class-4-test",
     title: "Karen passed class 4 test",
     date: "Feb 28, 2023",
-    image: "https://risenshinedriving.com/wp-content/uploads/2023/02/IMG_9634-scaled.jpg",
+    image: "/news/IMG_9634-scaled.jpg",
+    alt: "Karen posing with her Class 4 commercial driver's licence",
     category: "Class 4",
     successStory: "Professional driving requires a higher level of awareness and passenger management. Karen aced her Class 4 road test, demonstrating professional-tier safety and control.",
     instructorAdvice: "Class 4 testing is strict on pre-trip inspections. We ensured Karen had a methodical approach to vehicle checks and passenger safety briefings."
@@ -70,78 +74,150 @@ export const testimonials = [
     name: "Kira Sawatzky",
     role: "Full Program Graduate",
     quote: "Satpal is an amazing instructor. She's very calm, patient, and knowledgeable. She has helped me with my confidence and I finally feel safe to drive.",
-    image: "https://risenshinedriving.com/wp-content/uploads/2021/03/IMG_5636-2-1.jpeg"
+    image: "/news/truck.png"
   },
   {
-    name: "Manpreet S.",
-    role: "International Student",
-    quote: "She is a wonderful person and has a good teaching style. I was able to pass my test in one attempt. I really recommend her for driving.",
-    image: "https://risenshinedriving.com/wp-content/uploads/2021/04/IMG_6047-scaled.jpg"
+    name: "Ramandeep Kaur.",
+    role: "Road Test Success",
+    quote: "Rise n Shine Drive School helped me a lot in getting my class 5 drivers licence, special thanks to Satpal Kaur Hans as she went above and beyond to help me in every way possible.",
+    image: "/news/IMG_6769.jpeg"
   },
   {
-    name: "Inderpreet S.",
-    role: "Confident Pass",
-    quote: "I am having really good experience with Rise and shine driving school. Satpal is really very patient and explains each move and rule.",
-    image: "https://risenshinedriving.com/wp-content/uploads/2021/03/IMG_5637-2.jpeg"
+    name: "Gurpreet Kaur",
+    role: "First Time Passer",
+    quote: "I passed my N test on the first try thanks to Satpal Hans! She was very encouraging and point out my mistakes nicely.",
+    image: "/gallery/IMG_8273-scaled-e1642398023397.jpg"
   },
   {
-    name: "Preeti Singh",
-    role: "Refresher Course",
-    quote: "Best driving school in Kelowna area. Very cooperative and friendly behavior, really helps student to learn very fast and in easy way.",
-    image: "https://risenshinedriving.com/wp-content/uploads/2021/03/IMG_5641-2.jpeg"
+    name: "Deepika R.",
+    role: "New Immigrant Driver",
+    quote: "Coming from India, I was very nervous about BC road rules. Rise n Shine made the transition so smooth. Thank you for the patience!",
+    image: "/gallery/IMG_8285-scaled.jpg"
   },
   {
-    name: "Rishi Sethi",
-    role: "First Time Driver",
-    quote: "Passed in first attempt. Highly recommend Satpal sister for her calm nature and great depth of knowledge. She is very helpful and sweet.",
-    image: "https://risenshinedriving.com/wp-content/uploads/2021/03/IMG_5643-2.jpeg"
+    name: "Rajesh Kumar",
+    role: "Senior Driver Refresh",
+    quote: "Took a few brush-up lessons to get rid of some old habits. The difference in my awareness level is night and day.",
+    image: "/gallery/IMG_8292-scaled-e1642398882302.jpg"
   },
   {
-    name: "Guneet Grewal",
-    role: "Student Success",
-    quote: "One of the best driving schools around here. Very polite and calm instructor. Teaches according to the requirement. Best experience so far.",
-    image: "https://risenshinedriving.com/wp-content/uploads/2021/03/IMG_5635-2.jpeg"
+    name: "Anita Singh",
+    role: "Class 7 Graduate",
+    quote: "Best driving school in Kelowna. I recommend everyone to go to Hans Mam. I am very happy and got my licence.",
+    image: "/gallery/IMG_8297-scaled.jpg"
   },
   {
-    name: "Mousumi Pal",
-    role: "Satisfied Learner",
-    quote: "She is very good instructor. She will guide very patiently. If someone is nervous, please contact her. I recommend everyone to her.",
-    image: "https://risenshinedriving.com/wp-content/uploads/2021/03/IMG_9219-3.jpg"
+    name: "Sukhpreet B.",
+    role: "Road Test Success",
+    quote: "Great experience. Learned to stay calm in traffic. The instructions were clear and practical. Passed on my first attempt!",
+    image: "/news/truck.png"
   },
   {
     name: "Michelle Mikla",
-    role: "Refresher Student",
-    quote: "Satpal has given me so much confidence. Her instructions were clear and precise. Obtaining driving hints truly came in handy for safer driving.",
-    image: "https://risenshinedriving.com/wp-content/uploads/2021/03/IMG_9197-3.jpg"
+    role: "International Student",
+    quote: "Satpal has given me the confidence in my driving, instructions were clear and precise and obtaining driving hints of how to drive more safely truly came in handy. I would highly recommend this driving school for beginners and for those who want to brush up on their Driving skills.",
+    image: "/news/IMG_9197-3.jpg"
   }
 ];
 
 export const programs = [
   {
-    title: "Licence Prep",
-    price: "$70",
-    id: "prep",
-    duration: "90 min",
-    summary: "Perfect for students who need a final brush-up and a reliable vehicle for their road test.",
-    bullets: ["Local test routes", "Exam focus", "Cheat-sheet"],
-    image: "https://plus.unsplash.com/premium_photo-1661608930472-768826723049?q=80&w=2670&auto=format&fit=crop"
+    id: "standard-prep",
+    title: "The Standard Prep",
+    price: "$550",
+    duration: "5 Lessons + Car for Test",
+    summary: "Our most popular package in Kelowna, focusing on comprehensive road test readiness and hazard perception.",
+    bullets: [
+      "5 full 90-minute sessions",
+      "Mock road test evaluation",
+      "Parallel & Reverse Stall parking",
+      "Highway & city flow management",
+      "Dual-control car for road test day"
+    ],
+    image: "/gallery/IMG_8144-scaled-e1642396804704.jpg"
   },
   {
+    id: "starter-program",
     title: "Starter Program",
-    price: "$450",
-    id: "starter",
-    duration: "8 Hours",
-    summary: "Our most popular choice for intermediate learners wanting to solidify their road test readiness.",
-    bullets: ["Vehicle basics", "Defensive driving", "City routes"],
-    image: "https://plus.unsplash.com/premium_photo-1661331811566-ef92cf857b2a?q=80&w=2670&auto=format&fit=crop"
+    price: "$850",
+    duration: "8 Lessons total",
+    summary: "For beginners who want to build a rock-solid foundation, moving from basic controls to complex BC interior highways.",
+    bullets: [
+      "8 full 90-minute sessions",
+      "Complete controls mastery",
+      "Advanced hazard scanning",
+      "Winter condition strategies",
+      "Road test booking assistance"
+    ],
+    image: "/gallery/IMG_8151_2-scaled-e1642397646610.jpg"
   },
   {
-    title: "Automatic Mastery",
-    price: "$850",
-    id: "pro",
-    duration: "16 Hours",
-    summary: "Comprehensive training from zero to licensed driver with maximum focus on safety and parking.",
-    bullets: ["Complex traffic", "Precision parking", "Mock road test"],
-    image: "https://plus.unsplash.com/premium_photo-1661331821033-9114f6b2164a?q=80&w=2670&auto=format&fit=crop"
+    id: "quick-brush-up",
+    title: "Quick Foundation",
+    price: "$360",
+    duration: "3 Lessons + Car for Test",
+    summary: "Ideal for experienced drivers needing to purge old habits or get familiar with local Kelowna testing routes.",
+    bullets: [
+      "3 full 90-minute sessions",
+      "Route-specific orientation",
+      "Mirror habit correction",
+      "School zone & speed control focus",
+      "Dual-control car for road test day"
+    ],
+    image: "/gallery/IMG_8273-scaled-e1642398023397.jpg"
+  }
+];
+
+export const successStories = [
+  { src: "/gallery/IMG_8144-scaled-e1642396804704.jpg", alt: "Success student celebration in Kelowna" },
+  { src: "/gallery/IMG_8151_2-scaled-e1642397646610.jpg", alt: "Happy student with driver's license in BC" },
+  { src: "/gallery/IMG_8273-scaled-e1642398023397.jpg", alt: "Passed driving test on first attempt" },
+  { src: "/gallery/IMG_8285-scaled.jpg", alt: "Expert driving instruction success story" },
+  { src: "/gallery/IMG_8292-scaled-e1642398882302.jpg", alt: "Kelowna student passing road test" },
+  { src: "/gallery/IMG_8297-scaled.jpg", alt: "Successful road test preparation results" },
+  { src: "/gallery/IMG_8499-scaled.jpg", alt: "Student driver independence achieved" },
+  { src: "/gallery/IMG_8513-scaled.jpg", alt: "Professional driving school success" },
+  { src: "/gallery/IMG_8529-scaled.jpg", alt: "ICBC road test pass with Rise n Shine" },
+  { src: "/gallery/IMG_8540-scaled.jpg", alt: "Confidence on the road with expert coaching" },
+  { src: "/gallery/IMG_8543-scaled.jpg", alt: "Successful student driver in Kelowna" },
+  { src: "/gallery/IMG_8569-scaled.jpg", alt: "Road test success at ICBC Kelowna" },
+  { src: "/gallery/IMG_8575-scaled.jpg", alt: "Happy student after driving lesson" },
+  { src: "/gallery/IMG_8580-scaled.jpg", alt: "Building driving skills in BC" },
+  { src: "/gallery/IMG_8608-2-scaled.jpeg", alt: "Student passing road test with Rise n Shine" },
+  { src: "/gallery/IMG_8689-scaled.jpg", alt: "Driving school success story in Kelowna" },
+  { src: "/gallery/IMG_8718-scaled.jpg", alt: "Expert instruction leads to road test pass" },
+  { src: "/gallery/IMG_8733-2-scaled.jpg", alt: "Student driver success in BC" },
+  { src: "/gallery/IMG_8742-2-scaled.jpg", alt: "ICBC road test preparation results" },
+  { src: "/gallery/IMG_8801-scaled.jpg", alt: "Successful student celebrating driver's license" },
+  { src: "/gallery/IMG_8820-scaled.jpg", alt: "Road test success in Kelowna marketplace" },
+  { src: "/gallery/IMG_8937-scaled.jpg", alt: "Student driver's license win" },
+  { src: "/gallery/IMG_8954-2-scaled.jpg", alt: "Professional driving instruction results" },
+  { src: "/gallery/IMG_8964-scaled.jpg", alt: "ICBC success with Rise n Shine" },
+  { src: "/gallery/IMG_8969-scaled.jpg", alt: "Student driver confidence win" },
+  { src: "/gallery/IMG_8982-scaled.jpg", alt: "Safe driving skills achievement" },
+  { src: "/gallery/IMG_9097-2-scaled.jpg", alt: "Road test pass celebration" },
+  { src: "/gallery/IMG_9122-scaled.jpg", alt: "Happy student at ICBC Kelowna" },
+  { src: "/gallery/IMG_9134-scaled.jpg", alt: "Successful road test results in BC" },
+  { src: "/gallery/IMG_9136-scaled.jpg", alt: "Professional driving program success" },
+  { src: "/gallery/IMG_9143-scaled.jpg", alt: "Student driver success in Kelowna" },
+  { src: "/gallery/IMG_9631-2-scaled.jpg", alt: "Final road test pass result" },
+];
+
+export const faqData = [
+  {
+    question: "Can I take school’s car for the driving test?",
+    answer: "Yes, our car is available for to take it to the road test for $80 fee. We want you to be comfortable and relaxing knowing that you will be using the same car you practiced in while taking your driving lessons."
+  },
+  {
+    question: "How many lessons will I need to pass the road test?",
+    answer: "It completely depends on your ability to learn driving and whether you have previous driving experience. Some students learn fast and others take time to learn. One key thing in learning is the practical training. We make our students confident drivers so that they could be more comfortable with the driving and pass the test with flying colors."
+  },
+  {
+    question: "Can you provide assistance in booking the road test?",
+    answer: "Yes, we can guide you the through the process and in same cases we can book your road test on behalf of you with your authorization."
+  },
+  {
+    question: "Do you teach defensive training?",
+    answer: "It is a big part of what we teach, so yes, from risk avoidance to knowing how to get out of a skid. Each and every time we take our students out we are talking and showing them defensive techniques to keep themselves and others safer on the road."
   }
 ];

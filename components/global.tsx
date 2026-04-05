@@ -121,13 +121,71 @@ export const Navbar = () => {
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-white/8 px-6 py-12">
-      <div className="mx-auto flex max-w-7xl flex-col gap-6 text-sm text-white/42 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <p className="font-bold text-white mb-2 uppercase tracking-widest">Rise n Shine Driving School</p>
-          <p>© 2024. All rights reserved.</p>
+    <footer className="relative isolate overflow-hidden border-t border-white/8 bg-ink/50 pt-24 pb-32">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="grid gap-16 lg:grid-cols-[1fr_0.5fr_0.5fr_1fr]">
+          {/* Brand Column */}
+          <div className="space-y-8">
+            <Link href="/" className="inline-block">
+              <Image src="/logo.png" alt="Rise n Shine Logo" width={120} height={120} className="brightness-110" />
+            </Link>
+            <p className="max-w-xs text-sm leading-relaxed text-white/40">
+              Kelowna's premier driving school specializing in calm, confident ICBC road test preparation since 2011.
+            </p>
+            <div className="flex items-center gap-4">
+               {["facebook", "instagram", "twitter"].map((social) => (
+                 <div key={social} className="h-10 w-10 cursor-pointer rounded-xl border border-white/5 bg-white/5 transition-all hover:bg-accent hover:text-slate-950 flex items-center justify-center text-white/40">
+                   <div className="w-1.5 h-1.5 rounded-full bg-current" />
+                 </div>
+               ))}
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="mb-8 text-[10px] font-bold uppercase tracking-[0.3em] text-accent">Navigation</h3>
+            <ul className="space-y-4 text-xs font-bold uppercase tracking-widest text-white/40">
+              <li><Link href="/#about" className="hover:text-white transition-colors">About School</Link></li>
+              <li><Link href="/#programs" className="hover:text-white transition-colors">Programs</Link></li>
+              <li><Link href="/#gallery" className="hover:text-white transition-colors">Gallery</Link></li>
+              <li><Link href="/#news" className="hover:text-white transition-colors">Success Stories</Link></li>
+            </ul>
+          </div>
+
+          {/* Service Areas */}
+          <div>
+            <h3 className="mb-8 text-[10px] font-bold uppercase tracking-[0.3em] text-accent">Our Regions</h3>
+            <ul className="space-y-4 text-xs font-bold uppercase tracking-widest text-white/40">
+              <li className="flex items-center gap-2 pt-1"><div className="h-1 w-1 rounded-full bg-white/20" /> Kelowna</li>
+              <li className="flex items-center gap-2"><div className="h-1 w-1 rounded-full bg-white/20" /> West Kelowna</li>
+              <li className="flex items-center gap-2"><div className="h-1 w-1 rounded-full bg-white/20" /> Peachland</li>
+              <li className="flex items-center gap-2"><div className="h-1 w-1 rounded-full bg-white/20" /> Lake Country</li>
+            </ul>
+          </div>
+
+          {/* Contact Column */}
+          <div className="rounded-[2.5rem] border border-white/5 bg-white/5 p-10 backdrop-blur-3xl">
+            <h3 className="mb-6 text-[10px] font-bold uppercase tracking-[0.2em] text-white">Direct Line</h3>
+            <a href="tel:2503172175" className="block text-3xl font-bold tracking-tighter text-white hover:text-accent transition-colors">
+              250 317 2175
+            </a>
+            <p className="mt-8 text-xs font-bold uppercase tracking-widest text-white/30">
+              risenshinedriving@gmail.com
+            </p>
+            <div className="mt-8 flex items-center gap-3">
+               <div className="h-2 w-2 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]" />
+               <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">Operating: 8am — 8pm</span>
+            </div>
+          </div>
         </div>
-        <p className="max-w-xs text-right">Serving Kelowna, West Kelowna, Peachland, and Lake Country with pride.</p>
+
+        <div className="mt-24 flex flex-col gap-6 border-t border-white/5 pt-12 sm:flex-row sm:items-center sm:justify-between text-[10px] font-bold uppercase tracking-[0.3em] text-white/20">
+          <p>© 2024 Rise n Shine Driving School. Excellence in Driver Education.</p>
+          <div className="flex gap-8">
+            <span className="hover:text-white cursor-pointer transition-colors">Privacy</span>
+            <span className="hover:text-white cursor-pointer transition-colors">Terms</span>
+          </div>
+        </div>
       </div>
     </footer>
   );

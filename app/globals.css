@@ -45,11 +45,11 @@
   }
 
   .panel-card {
-    @apply rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 shadow-[0_24px_80px_rgba(0,0,0,0.18)] backdrop-blur-sm sm:p-10;
+    @apply rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.18)] backdrop-blur-sm sm:p-10;
   }
 
   .program-card {
-    @apply relative flex min-h-[460px] flex-col overflow-hidden rounded-[2.5rem] border border-white/[0.08] bg-[linear-gradient(165deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02)_50%,rgba(6,10,18,0.4))] p-8 shadow-[0_40px_100px_rgba(0,0,0,0.3)] backdrop-blur-md transition-all duration-500 sm:p-10 hover:border-accent/30 hover:shadow-[0_50px_120px_rgba(245,190,92,0.12)] hover:-translate-y-2;
+    @apply relative flex min-h-[460px] flex-col overflow-hidden rounded-[2.5rem] border border-white/[0.08] bg-[linear-gradient(165deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02)_50%,rgba(6,10,18,0.4))] p-6 shadow-[0_40px_100px_rgba(0,0,0,0.3)] backdrop-blur-md transition-all duration-500 sm:p-10 hover:border-accent/30 hover:shadow-[0_50px_120px_rgba(245,190,92,0.12)] hover:-translate-y-2;
   }
 
   .rate-row-card {
@@ -57,11 +57,11 @@
   }
 
   .timeline-card {
-    @apply rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 shadow-[0_20px_70px_rgba(0,0,0,0.16)] sm:p-10;
+    @apply rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_20px_70px_rgba(0,0,0,0.16)] sm:p-10;
   }
 
   .proof-card {
-    @apply rounded-[2rem] border border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(245,190,92,0.14),rgba(255,255,255,0.03)_46%,rgba(255,255,255,0.02))] p-8 shadow-[0_24px_80px_rgba(0,0,0,0.2)] sm:p-10;
+    @apply rounded-[2rem] border border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(245,190,92,0.14),rgba(255,255,255,0.03)_46%,rgba(255,255,255,0.02))] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.2)] sm:p-10;
   }
 
   .button-primary {
