@@ -59,13 +59,37 @@ export const metadata: Metadata = {
   title: "Rise n Shine Driving School | Best Driving Lessons in Kelowna, BC",
   description: "Join Rise n Shine Driving School for expert ICBC road test preparation. Professional driving lessons in Kelowna, West Kelowna, Peachland, and Lake Country. Licensed instructors, dual-control cars, and flexible scheduling.",
   keywords: ["driving school kelowna", "ICBC road test prep kelowna", "driving lessons west kelowna", "female driving instructor bc", "automatic car training kelowna"],
+  metadataBase: new URL("https://risenshinedriving.com"),
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-icon.png",
+  },
+  manifest: "/manifest.json",
   openGraph: {
     title: "Rise n Shine Driving School | Kelowna's Top Driving Lessons",
     description: "Learn driving with confidence. ICBC certified school with dual-control cars and expert instructors in the Kelowna area.",
+    url: "https://risenshinedriving.com",
+    siteName: "Rise n Shine Driving School",
+    images: [{
+      url: "/icon.png",
+      width: 512,
+      height: 512,
+      alt: "Rise n Shine Driving School Icon",
+    }],
+    locale: "en_CA",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
+    title: "Rise n Shine Driving School | Road Test Success in Kelowna",
+    description: "Expert ICBC road test preparation and professional 1:1 driving lessons in Kelowna, BC.",
+    images: ["/icon.png"],
   },
 };
 
