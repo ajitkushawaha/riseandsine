@@ -58,6 +58,8 @@ export const Navbar = () => {
             alt="Rise n Shine Driving School Logo - Kelowna"
             width={100}
             height={100}
+            priority
+            className="w-auto h-auto"
           />
           </Link>
 

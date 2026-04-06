@@ -7,12 +7,14 @@ const poppins = Poppins({
   variable: "--font-headline",
   subsets: ["latin"],
   weight: ["400", "600", "700", "800"],
+  display: "swap",
 });
 
 const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 // Primary Structured Data for local business

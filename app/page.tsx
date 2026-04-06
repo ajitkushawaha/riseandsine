@@ -1,24 +1,22 @@
-"use client";
-
 import React from "react";
 import { Navbar, Footer, MobileDock } from "@/components/global";
 
 import dynamic from "next/dynamic";
 
-// Sections - Lazy load lower ones to reduce initial bundle
+// Sections - Using dynamic imports for code-splitting but with SSR enabled for performance
 const Hero = dynamic(() => import("@/components/sections/Hero"));
 const News = dynamic(() => import("@/components/sections/News"));
 const About = dynamic(() => import("@/components/sections/About"));
 const Instructor = dynamic(() => import("@/components/sections/Instructor"));
-const SuccessWall = dynamic(() => import("@/components/sections/SuccessWall"), { ssr: false });
-const Pillars = dynamic(() => import("@/components/sections/Pillars"), { ssr: false });
+const SuccessWall = dynamic(() => import("@/components/sections/SuccessWall"));
+const Pillars = dynamic(() => import("@/components/sections/Pillars"));
 const Programs = dynamic(() => import("@/components/sections/Programs"));
-const Journey = dynamic(() => import("@/components/sections/Journey"), { ssr: false });
-const Gallery = dynamic(() => import("@/components/sections/Gallery"), { ssr: false });
-const Proof = dynamic(() => import("@/components/sections/Proof"), { ssr: false });
-const Testimonials = dynamic(() => import("@/components/sections/Testimonials"), { ssr: false });
-const FAQ = dynamic(() => import("@/components/sections/FAQ"), { ssr: false });
-const Contact = dynamic(() => import("@/components/sections/Contact"), { ssr: false });
+const Journey = dynamic(() => import("@/components/sections/Journey"));
+const Gallery = dynamic(() => import("@/components/sections/Gallery"));
+const Proof = dynamic(() => import("@/components/sections/Proof"));
+const Testimonials = dynamic(() => import("@/components/sections/Testimonials"));
+const FAQ = dynamic(() => import("@/components/sections/FAQ"));
+const Contact = dynamic(() => import("@/components/sections/Contact"));
 
 export default function Home() {
   return (

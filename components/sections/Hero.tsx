@@ -15,6 +15,7 @@ export const Hero = () => {
           alt="Modern car driving through the city at dusk - Rise n Shine Kelowna"
           fill
           priority
+          sizes="100vw"
           className="object-cover brightness-[0.4]"
         />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(245,190,92,0.22),transparent_35%),linear-gradient(180deg,rgba(6,10,18,0.2),rgba(6,10,18,0.84)_55%,rgba(6,10,18,1))]" />
