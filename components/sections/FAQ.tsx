@@ -12,7 +12,7 @@ export const FAQ = () => {
     return (
         <section id="faqs" className="section-shell">
             <div className="mx-auto max-w-7xl px-6">
-                <div className="flex flex-col items-center text-center mb-20 lg:items-start lg:text-left">
+                <div className="flex flex-col items-center text-center mb-12 lg:items-start lg:text-left">
                     <SectionEyebrow>Driving School Features</SectionEyebrow>
                     <h2 className="mt-8 font-headline text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">
                         Frequently Asked Questions.
@@ -57,11 +57,11 @@ const FAQItem = ({ item, isOpen, onClick }: { item: typeof faqData[0], isOpen: b
                     }`}>
                         <HelpCircle size={24} />
                     </div>
-                    <span className={`text-lg font-bold sm:text-xl transition-colors duration-300 ${
+                    <h3 className={`text-lg font-bold sm:text-xl transition-colors duration-300 ${
                         isOpen ? "text-white" : "text-white/70 group-hover:text-white"
                     }`}>
                         {item.question}
-                    </span>
+                    </h3>
                 </div>
                 <div className={`flex h-8 w-8 items-center justify-center rounded-full transition-all duration-500 ${
                     isOpen ? "bg-accent text-slate-950 rotate-90" : "bg-white/10 text-white/40"

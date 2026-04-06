@@ -1,20 +1,24 @@
+"use client";
+
 import React from "react";
 import { Navbar, Footer, MobileDock } from "@/components/global";
 
-// Sections
-import Hero from "@/components/sections/Hero";
-import News from "@/components/sections/News";
-import About from "@/components/sections/About";
-import Instructor from "@/components/sections/Instructor";
-import SuccessWall from "@/components/sections/SuccessWall";
-import Pillars from "@/components/sections/Pillars";
-import Programs from "@/components/sections/Programs";
-import Journey from "@/components/sections/Journey";
-import Gallery from "@/components/sections/Gallery";
-import Proof from "@/components/sections/Proof";
-import Testimonials from "@/components/sections/Testimonials";
-import FAQ from "@/components/sections/FAQ";
-import Contact from "@/components/sections/Contact";
+import dynamic from "next/dynamic";
+
+// Sections - Lazy load lower ones to reduce initial bundle
+const Hero = dynamic(() => import("@/components/sections/Hero"));
+const News = dynamic(() => import("@/components/sections/News"));
+const About = dynamic(() => import("@/components/sections/About"));
+const Instructor = dynamic(() => import("@/components/sections/Instructor"));
+const SuccessWall = dynamic(() => import("@/components/sections/SuccessWall"), { ssr: false });
+const Pillars = dynamic(() => import("@/components/sections/Pillars"), { ssr: false });
+const Programs = dynamic(() => import("@/components/sections/Programs"));
+const Journey = dynamic(() => import("@/components/sections/Journey"), { ssr: false });
+const Gallery = dynamic(() => import("@/components/sections/Gallery"), { ssr: false });
+const Proof = dynamic(() => import("@/components/sections/Proof"), { ssr: false });
+const Testimonials = dynamic(() => import("@/components/sections/Testimonials"), { ssr: false });
+const FAQ = dynamic(() => import("@/components/sections/FAQ"), { ssr: false });
+const Contact = dynamic(() => import("@/components/sections/Contact"), { ssr: false });
 
 export default function Home() {
   return (

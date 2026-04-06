@@ -10,7 +10,7 @@ export const Instructor = () => {
   return (
     <section id="team" className="section-shell bg-ink-soft text-center lg:text-left">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-5 mb-14">
+        <div className="flex flex-col lg:flex-row items-center gap-5 mb-8">
           <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/5">
             <Users size={36} className="text-white" strokeWidth={1.5} />
           </div>

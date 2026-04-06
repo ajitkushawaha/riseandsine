@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Car, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { galleryImages } from "@/lib/data";
 import { SectionEyebrow } from "@/components/global";
+import Image from "next/image";
 
 export const Gallery = () => {
   const [selectedGalleryIndex, setSelectedGalleryIndex] = useState<number | null>(null);
@@ -41,10 +42,11 @@ export const Gallery = () => {
             onClick={() => setSelectedGalleryIndex(0)}
             className="group relative h-[600px] cursor-pointer overflow-hidden rounded-[3rem] border border-white/10 md:col-span-2 lg:col-span-1 lg:row-span-2"
           >
-            <img 
+            <Image 
               src={galleryImages[0].src} 
               alt={galleryImages[0].alt} 
-              className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110" 
+              fill
+              className="object-cover transition-transform duration-1000 group-hover:scale-110" 
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
             <div className="absolute bottom-0 left-0 p-10 transform transition-transform duration-500 group-hover:translate-y-[-10px]">
@@ -65,10 +67,11 @@ export const Gallery = () => {
                 onClick={() => setSelectedGalleryIndex(index + 1)}
                 className="group relative h-[288px] cursor-pointer overflow-hidden rounded-[2.5rem] border border-white/10"
              >
-                <img 
+                <Image 
                     src={image.src} 
                     alt={image.alt} 
-                    className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110" 
+                    fill
+                    className="object-cover transition-transform duration-1000 group-hover:scale-110" 
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="absolute bottom-0 left-0 p-8 transform translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
@@ -118,11 +121,14 @@ export const Gallery = () => {
                 className="relative max-h-full max-w-6xl overflow-hidden rounded-[3rem] shadow-2xl"
                 onClick={(e) => e.stopPropagation()}
                >
-                 <img 
-                    src={galleryImages[selectedGalleryIndex].src} 
-                    className="h-auto max-h-[80vh] w-auto border border-white/10 object-contain shadow-2xl"
-                    alt={galleryImages[selectedGalleryIndex].alt} 
-                 />
+                 <div className="relative h-[80vh] w-full max-w-4xl aspect-video sm:aspect-auto">
+                    <Image 
+                        src={galleryImages[selectedGalleryIndex].src} 
+                        fill
+                        className="border border-white/10 object-contain shadow-2xl"
+                        alt={galleryImages[selectedGalleryIndex].alt} 
+                    />
+                 </div>
                  <div className="bg-ink/80 p-8 backdrop-blur-md">
                     <p className="text-accent font-bold uppercase tracking-widest text-xs mb-2">{galleryImages[selectedGalleryIndex].alt}</p>
                     <h3 className="text-xl font-bold text-white">{galleryImages[selectedGalleryIndex].detail}</h3>

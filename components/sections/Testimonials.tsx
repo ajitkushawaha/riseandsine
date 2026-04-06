@@ -5,14 +5,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Star, CheckCircle2 } from "lucide-react";
 import { testimonials } from "@/lib/data";
 import { SectionEyebrow } from "@/components/global";
+import Image from "next/image";
 
 export const Testimonials = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="reviews" className="section-shell relative ">
+    <section id="reviews" className="relative pt-12 ">
       <div className="mx-auto max-w-7xl ">
-        <div className="mb-24 text-center lg:text-left">
+        <div className="mb-12 text-center lg:text-left">
           <SectionEyebrow>Student voices</SectionEyebrow>
           <h2 className="mt-8 font-headline text-5xl font-bold text-white tracking-tight sm:text-6xl">
             Real Stories. <span className="text-white/30">Verified Wins.</span>
@@ -78,13 +79,16 @@ export const Testimonials = () => {
                 <div className={`relative aspect-square overflow-hidden rounded-3xl border-2 transition-all duration-500 group-hover:shadow-[0_0_30px_rgba(245,190,92,0.3)] ${
                   hoveredIndex === index ? 'border-accent shadow-[0_0_30px_rgba(245,190,92,0.3)]' : 'border-white/5 group-hover:border-accent/40'
                 }`}>
-                  <img 
-                    src={student.image} 
-                    alt={student.name} 
-                    className={`h-full w-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110 ${
-                        hoveredIndex === index ? 'grayscale-0 scale-110' : 'grayscale'
-                    }`} 
-                  />
+                  <div className={`relative h-full w-full transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110 ${
+                      hoveredIndex === index ? 'grayscale-0 scale-110' : 'grayscale'
+                  }`}>
+                    <Image 
+                      src={student.image} 
+                      alt={student.alt} 
+                      fill
+                      className="object-cover" 
+                    />
+                  </div>
                   <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                 </div>
               </motion.div>
@@ -92,7 +96,7 @@ export const Testimonials = () => {
           ))}
         </div>
 
-        <div className="mt-32 text-center">
+        <div className="mt-16 text-center">
             <p className="text-xs font-bold uppercase tracking-[0.4em] text-white/20">
                 Hover or tap to hear their experience
             </p>

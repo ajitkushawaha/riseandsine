@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <section id="top" className="relative isolate min-h-screen overflow-hidden border-b border-white/8">
+    <section id="top" className="relative isolate min-h-screen overflow-hidden border-b border-white/8 pt-10">
       <div className="absolute inset-0">
         <Image
           src="/hero_bg.png"
@@ -20,12 +20,12 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(245,190,92,0.22),transparent_35%),linear-gradient(180deg,rgba(6,10,18,0.2),rgba(6,10,18,0.84)_55%,rgba(6,10,18,1))]" />
       </div>
 
-      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-6 pb-14 pt-32">
+      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-6 pb-12 pt-24">
         <motion.div
-          initial={{ opacity: 0, y: 36 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-4xl"
+           initial={{ opacity: 0, y: 36 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.8, ease: "easeOut" }}
+           className="max-w-4xl"
         >
           <SectionEyebrow>Kelowna based expert training</SectionEyebrow>
           <h1 className="mt-8 max-w-4xl font-headline text-[2.75rem] font-semibold leading-[1.05] tracking-tight text-white sm:text-7xl lg:text-[7.2rem] lg:leading-[0.92]">
@@ -36,7 +36,7 @@ export const Hero = () => {
             A cinematic, confidence-first driving school experience for beginners who want calm coaching,
             structured practice, and real control on city roads in BC.
           </p>
-
+ 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a href="#contact" className="button-primary w-full justify-center sm:w-auto transition-all">
               Start your trial
@@ -47,12 +47,12 @@ export const Hero = () => {
             </a>
           </div>
         </motion.div>
-
+ 
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-16 grid grid-cols-2 gap-4 border-t border-white/12 pt-8 sm:grid-cols-3"
+          className="mt-12 grid grid-cols-2 gap-4 border-t border-white/12 pt-8 sm:grid-cols-3"
         >
            <div className="rounded-3xl border border-white/10 bg-white/6 p-5 backdrop-blur-sm">
               <p className="text-2xl font-semibold text-white tracking-tighter sm:text-3xl">$360</p>

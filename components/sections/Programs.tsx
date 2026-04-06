@@ -22,7 +22,7 @@ export const Programs = () => {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-3">
+        <div className="mt-10 grid gap-8 lg:grid-cols-3">
           {programs.map((program, index) => (
             <motion.article
               key={program.title}

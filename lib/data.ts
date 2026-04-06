@@ -74,49 +74,57 @@ export const testimonials = [
     name: "Kira Sawatzky",
     role: "Full Program Graduate",
     quote: "Satpal is an amazing instructor. She's very calm, patient, and knowledgeable. She has helped me with my confidence and I finally feel safe to drive.",
-    image: "/news/truck.png"
+    image: "/news/truck.png",
+    alt: "Kira Sawatzky sharing her experience with Rise n Shine"
   },
   {
     name: "Ramandeep Kaur.",
     role: "Road Test Success",
     quote: "Rise n Shine Drive School helped me a lot in getting my class 5 drivers licence, special thanks to Satpal Kaur Hans as she went above and beyond to help me in every way possible.",
-    image: "/news/IMG_6769.jpeg"
+    image: "/news/IMG_6769.jpeg",
+    alt: "Ramandeep Kaur - Celebrating road test success in Kelowna"
   },
   {
     name: "Gurpreet Kaur",
     role: "First Time Passer",
     quote: "I passed my N test on the first try thanks to Satpal Hans! She was very encouraging and point out my mistakes nicely.",
-    image: "/gallery/IMG_8273-scaled-e1642398023397.jpg"
+    image: "/gallery/IMG_8273-scaled-e1642398023397.jpg",
+    alt: "Gurpreet Kaur - Passing N test on first attempt"
   },
   {
     name: "Deepika R.",
     role: "New Immigrant Driver",
     quote: "Coming from India, I was very nervous about BC road rules. Rise n Shine made the transition so smooth. Thank you for the patience!",
-    image: "/gallery/IMG_8285-scaled.jpg"
+    image: "/gallery/IMG_8285-scaled.jpg",
+    alt: "Deepika R. - Navigating BC road rules successfully"
   },
   {
     name: "Rajesh Kumar",
     role: "Senior Driver Refresh",
     quote: "Took a few brush-up lessons to get rid of some old habits. The difference in my awareness level is night and day.",
-    image: "/gallery/IMG_8292-scaled-e1642398882302.jpg"
+    image: "/gallery/IMG_8292-scaled-e1642398882302.jpg",
+    alt: "Rajesh Kumar - Senior driver refresh course success"
   },
   {
     name: "Anita Singh",
     role: "Class 7 Graduate",
     quote: "Best driving school in Kelowna. I recommend everyone to go to Hans Mam. I am very happy and got my licence.",
-    image: "/gallery/IMG_8297-scaled.jpg"
+    image: "/gallery/IMG_8297-scaled.jpg",
+    alt: "Anita Singh - Happy driving school graduate"
   },
   {
     name: "Sukhpreet B.",
     role: "Road Test Success",
     quote: "Great experience. Learned to stay calm in traffic. The instructions were clear and practical. Passed on my first attempt!",
-    image: "/news/truck.png"
+    image: "/news/truck.png",
+    alt: "Sukhpreet B. celebrating a successful road test"
   },
   {
     name: "Michelle Mikla",
     role: "International Student",
     quote: "Satpal has given me the confidence in my driving, instructions were clear and precise and obtaining driving hints of how to drive more safely truly came in handy. I would highly recommend this driving school for beginners and for those who want to brush up on their Driving skills.",
-    image: "/news/IMG_9197-3.jpg"
+    image: "/news/IMG_9197-3.jpg",
+    alt: "Michelle Mikla - Expert driving instructions results"
   }
 ];
 

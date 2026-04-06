@@ -9,7 +9,10 @@ import {
   ArrowRight,
   MessageCircle,
   Calendar,
-  Car
+  Car,
+  Facebook,
+  Instagram,
+  MapPin
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -43,7 +46,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className={`fixed inset-x-0 top-0 z-[100] transition-all duration-500 ${
+      <nav className={`fixed inset-x-0 top-0 z-100 transition-all duration-500 ${
         scrolled ? "bg-black/80 py-4 backdrop-blur-2xl shadow-xl" : "bg-transparent py-8"
       }`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
@@ -51,10 +54,10 @@ export const Navbar = () => {
           href={'/'}
           >
           <Image
-          src="/logo.png"
-          alt=""
-          width={100}
-          height={100}
+            src="/logo.png"
+            alt="Rise n Shine Driving School Logo - Kelowna"
+            width={100}
+            height={100}
           />
           </Link>
 
@@ -88,7 +91,7 @@ export const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[200] bg-slate-950 lg:hidden"
+            className="fixed inset-0 z-200 bg-slate-950 lg:hidden"
           >
             <div className="flex flex-col h-full p-8">
               <div className="flex items-center justify-between mb-12">
@@ -127,7 +130,7 @@ export const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-8">
             <Link href="/" className="inline-block">
-              <Image src="/logo.png" alt="Rise n Shine Logo" width={120} height={120} className="brightness-110" />
+              <Image src="/logo.png" alt="Rise n Shine Driving School Kelowna" width={120} height={120} className="brightness-110" />
             </Link>
             <p className="max-w-xs text-sm leading-relaxed text-white/40">
               Kelowna's premier driving school specializing in calm, confident ICBC road test preparation since 2011.
@@ -176,6 +179,19 @@ export const Footer = () => {
                <div className="h-2 w-2 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]" />
                <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">Operating: 8am — 8pm</span>
             </div>
+
+            {/* Social Links for SEO Authority */}
+            <div className="mt-10 flex gap-4">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 transition-all hover:bg-accent hover:text-slate-950">
+                <Facebook size={18} />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 transition-all hover:bg-accent hover:text-slate-950">
+                <Instagram size={18} />
+              </a>
+              <a href="https://google.com/business" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 transition-all hover:bg-accent hover:text-slate-950">
+                <MapPin size={18} />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -193,7 +209,7 @@ export const Footer = () => {
 
 export const MobileDock = () => {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-[100] border-t border-white/10 bg-ink/92 p-3 backdrop-blur-xl lg:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-100 border-t border-white/10 bg-ink/92 p-3 backdrop-blur-xl lg:hidden">
       <div className="grid grid-cols-3 gap-3">
         <a href="tel:2503172175" className="flex flex-col items-center gap-1 py-3 rounded-2xl bg-white/5 text-[10px] font-bold uppercase tracking-widest text-white">
           <Phone size={18} />

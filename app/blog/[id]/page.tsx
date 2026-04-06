@@ -39,5 +39,38 @@ export default async function BlogDetailPage({ params }: PageProps) {
 
   const relatedPosts = blogPosts.filter((p) => p.id !== id).slice(0, 3);
 
-  return <BlogContent post={post} relatedPosts={relatedPosts} />;
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://risenshinedriving.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Success Stories",
+        "item": "https://risenshinedriving.com/#news"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": `https://risenshinedriving.com/blog/${id}`
+      }
+    ]
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <BlogContent post={post} relatedPosts={relatedPosts} />
+    </>
+  );
 }

@@ -11,7 +11,7 @@ export const News = () => {
   return (
     <section id="news" className="section-shell">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="max-w-2xl text-center md:text-left mx-auto lg:mx-0">
             <SectionEyebrow>Our Blog</SectionEyebrow>
             <h2 className="mt-8 font-headline text-5xl font-bold text-white tracking-tight sm:text-6xl">
