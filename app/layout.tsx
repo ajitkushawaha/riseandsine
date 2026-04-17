@@ -22,7 +22,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "DrivingSchool",
   "name": "Rise n Shine Driving School",
-  "alternateName": "Rise n Shine Kelowna",
+  "alternateName": "Rise n Shine Bloemfontein",
   "image": "https://www.risenshinedriving.com/logo.png",
   "@id": "https://www.risenshinedriving.com",
   "url": "https://www.risenshinedriving.com",
@@ -30,9 +30,10 @@ const jsonLd = {
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Serving all of Kelowna",
+    "streetAddress": "688 Deans Dr",
     "addressLocality": "Kelowna",
     "addressRegion": "BC",
+    "postalCode": "V1P 1A1",
     "addressCountry": "CA"
   },
   "geo": {
@@ -41,10 +42,10 @@ const jsonLd = {
     "longitude": -119.496011
   },
   "areaServed": [
-      { "@type": "City", "name": "Kelowna" },
-      { "@type": "City", "name": "West Kelowna" },
-      { "@type": "City", "name": "Peachland" },
-      { "@type": "City", "name": "Lake Country" }
+    { "@type": "City", "name": "Kelowna" },
+    { "@type": "City", "name": "West Kelowna" },
+    { "@type": "City", "name": "Peachland" },
+    { "@type": "City", "name": "Lake Country" }
   ],
   "description": "Premium driving school in Kelowna offering ICBC road test preparation, defensive driving, and professional 1:1 coaching.",
   "openingHoursSpecification": {
@@ -72,10 +73,10 @@ export const metadata: Metadata = {
   title: "Rise n Shine Driving School | Best Driving Lessons in Kelowna, BC",
   description: "Join Kelowna's premier driving school for expert ICBC road test preparation. Professional, calm driving lessons in Kelowna, West Kelowna, and Peachland. Top success rates.",
   keywords: [
-    "driving school kelowna", 
-    "ICBC road test preparation kelowna", 
-    "driving lessons west kelowna", 
-    "female driving instructor kelowna", 
+    "driving school kelowna",
+    "ICBC road test preparation kelowna",
+    "driving lessons west kelowna",
+    "female driving instructor kelowna",
     "driving classes peachland bc",
     "best driving school in kelowna",
     "automatic driving lessons kelowna",
