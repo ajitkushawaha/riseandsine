@@ -23,9 +23,9 @@ const jsonLd = {
   "@type": "DrivingSchool",
   "name": "Rise n Shine Driving School",
   "alternateName": "Rise n Shine Kelowna",
-  "image": "https://risenshinedriving.com/logo.png",
-  "@id": "https://risenshinedriving.com",
-  "url": "https://risenshinedriving.com",
+  "image": "https://www.risenshinedriving.com/logo.png",
+  "@id": "https://www.risenshinedriving.com",
+  "url": "https://www.risenshinedriving.com",
   "telephone": "+12503172175",
   "priceRange": "$$",
   "address": {
@@ -78,12 +78,30 @@ export const metadata: Metadata = {
     "female driving instructor kelowna", 
     "driving classes peachland bc",
     "best driving school in kelowna",
-    "automatic driving lessons kelowna"
+    "automatic driving lessons kelowna",
+    "driving lessons for beginners",
+    "safe driving",
+    "driving instructor training",
+    "student driver",
+    "learner driver lessons",
+    "best driving lessons near me",
+    "professional driver training",
+    "driving coaching",
+    "student driving classes",
+    "shine driving institute",
+    "license driving",
+    "driving school",
+    "driving instructor courses",
+    "car driving learning",
+    "driving learner",
+    "best car driving lessons",
+    "driving skills",
+    "car driving lessons for beginners"
   ],
   applicationName: "Rise n Shine Driving School",
-  authors: [{ name: "Satpal Hans", url: "https://risenshinedriving.com" }],
+  authors: [{ name: "Satpal Hans", url: "https://www.risenshinedriving.com" }],
   publisher: "Rise n Shine Driving School",
-  metadataBase: new URL("https://risenshinedriving.com"),
+  metadataBase: new URL("https://www.risenshinedriving.com"),
   alternates: {
     canonical: "/",
   },
@@ -109,7 +127,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rise n Shine Driving School Kelowna | Professional Driving Lessons",
     description: "Expert ICBC road test preparation and professional 1:1 driving lessons in Kelowna area. Start your journey with confidence using our dual-control cars.",
-    url: "https://risenshinedriving.com",
+    url: "https://www.risenshinedriving.com",
     siteName: "Rise n Shine Driving School",
     images: [{
       url: "/icon.png",
@@ -127,7 +145,7 @@ export const metadata: Metadata = {
     images: ["/icon.png"],
   },
   verification: {
-    google: "YOUR_COSNHOLE_VERIFICATION_ID", // TODO: Replace with actual ID
+    google: "IxfTSJL6G0SDiBHcep30iAG1zauozr1H0aSR9yI216M",
   },
 };
 

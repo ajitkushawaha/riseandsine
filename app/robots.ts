@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://risenshinedriving.com/sitemap.xml',
+    sitemap: 'https://www.risenshinedriving.com/sitemap.xml',
   };
 }
