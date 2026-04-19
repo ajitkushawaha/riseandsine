@@ -53,10 +53,10 @@ export const Navbar = () => {
             href={'/'}
           >
             <Image
-              src="/logo.png"
+              src="/logo1.png"
               alt="Rise n Shine Driving School Logo - Kelowna"
-              width={100}
-              height={100}
+              width={150}
+              height={200}
               priority
               className="w-auto h-auto"
             />
@@ -131,7 +131,7 @@ export const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-8">
             <Link href="/" className="inline-block">
-              <Image src="/logo.png" alt="Rise n Shine Driving School Kelowna" width={120} height={120} className="brightness-110" />
+              <Image src="/logo1.png" alt="Rise n Shine Driving School Kelowna" width={200} height={200} className="brightness-110" />
             </Link>
             <p className="max-w-xs text-sm leading-relaxed text-white/40">
               Kelowna's premier driving school specializing in calm, confident ICBC road test preparation since 2011.
