@@ -136,13 +136,7 @@ export const Footer = () => {
             <p className="max-w-xs text-sm leading-relaxed text-white/40">
               Kelowna's premier driving school specializing in calm, confident ICBC road test preparation since 2011.
             </p>
-            <div className="flex items-center gap-4">
-              {["facebook", "instagram", "twitter"].map((social) => (
-                <div key={social} className="h-10 w-10 cursor-pointer rounded-xl border border-white/5 bg-white/5 transition-all hover:bg-accent hover:text-slate-950 flex items-center justify-center text-white/40">
-                  <div className="w-1.5 h-1.5 rounded-full bg-current" />
-                </div>
-              ))}
-            </div>
+    
           </div>
 
           {/* Quick Links */}
@@ -160,7 +154,7 @@ export const Footer = () => {
           <div>
             <h3 className="mb-8 text-[10px] font-bold uppercase tracking-[0.3em] text-accent">Our Office</h3>
             <a 
-              href="https://www.google.com/maps/search/?api=1&query=688+Deans+Dr+Kelowna+BC+V1P+1A1+Canada" 
+              href="https://maps.app.goo.gl/87bFpn5Nwe7ZiAyY7" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group block space-y-4 text-xs font-bold uppercase leading-relaxed tracking-widest text-white/40 hover:text-white transition-colors"
@@ -192,13 +186,13 @@ export const Footer = () => {
 
             {/* Social Links for SEO Authority */}
             <div className="mt-10 flex gap-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 transition-all hover:bg-accent hover:text-slate-950">
+              <a href="https://www.facebook.com/share/18Svj8yhAW/" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 transition-all hover:bg-accent hover:text-slate-950">
                 <Facebook size={18} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 transition-all hover:bg-accent hover:text-slate-950">
+              <a href="https://www.instagram.com/risenshinedriving?igsh=MWU0YzdkZXh2MWlrNw==" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 transition-all hover:bg-accent hover:text-slate-950">
                 <Instagram size={18} />
               </a>
-              <a href="https://google.com/business" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 transition-all hover:bg-accent hover:text-slate-950">
+              <a href="https://maps.app.goo.gl/87bFpn5Nwe7ZiAyY7" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 transition-all hover:bg-accent hover:text-slate-950">
                 <MapPin size={18} />
               </a>
             </div>
