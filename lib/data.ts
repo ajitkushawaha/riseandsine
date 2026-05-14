@@ -132,7 +132,7 @@ export const programs = [
   {
     id: "standard-prep",
     title: "The Standard Prep",
-    price: "$550",
+    price: "$520",
     duration: "5 Lessons + Car for Test",
     summary: "Our most popular package in Kelowna, focusing on comprehensive road test readiness and hazard perception.",
     bullets: [

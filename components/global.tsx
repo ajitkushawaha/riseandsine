@@ -39,6 +39,7 @@ export const Navbar = () => {
   const navLinks = [
     { name: "Services", href: "/#services" },
     { name: "About", href: "/#about" },
+    { name: "Pricing", href: "/price" },
     { name: "Gallery", href: "/#gallery" },
     { name: "Reviews", href: "/#proof" },
     { name: "News", href: "/#news" },
@@ -143,6 +144,7 @@ export const Footer = () => {
           <div>
             <h3 className="mb-8 text-[10px] font-bold uppercase tracking-[0.3em] text-accent">Navigation</h3>
             <ul className="space-y-4 text-xs font-bold uppercase tracking-widest text-white/40">
+              <li><Link href="/price" className="hover:text-white transition-colors">Pricing</Link></li>
               <li><Link href="/#about" className="hover:text-white transition-colors">About School</Link></li>
               <li><Link href="/#programs" className="hover:text-white transition-colors">Programs</Link></li>
               <li><Link href="/#gallery" className="hover:text-white transition-colors">Gallery</Link></li>

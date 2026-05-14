@@ -98,9 +98,19 @@ export const Contact = () => {
                   <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 ml-4">Our Programs</label>
                   <select name="program" value={formData.program} onChange={handleChange} className="w-full rounded-2xl border border-white/10 bg-white/5 px-6 py-3.5 sm:py-4 text-white focus:border-accent focus:outline-none transition-all appearance-none cursor-pointer">
                     <option className="bg-ink" value="Select a package">Select a package</option>
-                    <option className="bg-ink" value="Starter Program (8 Hours)">Starter Program (8 Hours)</option>
-                    <option className="bg-ink" value="Standard Prep (5 Lessons)">Standard Prep (5 Lessons)</option>
-                    <option className="bg-ink" value="Quick Foundation (3 Lessons)">Quick Foundation (3 Lessons)</option>
+                    <option className="bg-ink" value="60m Lessons - 1 Lesson">$80 - 60m Lesson (1)</option>
+                    <option className="bg-ink" value="60m Lessons - 3 Lessons">$240 - 60m Lessons (3)</option>
+                    <option className="bg-ink" value="60m Lessons - 5 Lessons">$390 - 60m Lessons (5)</option>
+                    <option className="bg-ink" value="60m Lessons - 10 Lessons">$775 - 60m Lessons (10)</option>
+                    <option className="bg-ink" value="60m Lessons - 5 + Road Test">$470 - 60m Lessons (5) + Road Test</option>
+                    <option className="bg-ink" value="60m Lessons - 10 + Road Test">$850 - 60m Lessons (10) + Road Test</option>
+                    <option className="bg-ink" value="90m Lessons - 1 Lesson">$90 - 90m Lesson (1)</option>
+                    <option className="bg-ink" value="90m Lessons - 3 Lessons">$270 - 90m Lessons (3)</option>
+                    <option className="bg-ink" value="90m Lessons - 5 Lessons">$440 - 90m Lessons (5)</option>
+                    <option className="bg-ink" value="90m Lessons - 10 Lessons">$875 - 90m Lessons (10)</option>
+                    <option className="bg-ink" value="90m Lessons - 5 + Road Test">$520 - 90m Lessons (5) + Road Test</option>
+                    <option className="bg-ink" value="90m Lessons - 10 + Road Test">$950 - 90m Lessons (10) + Road Test</option>
+                    <option className="bg-ink" value="Custom Package">Custom Package - Please specify in message</option>
                   </select>
                </div>
                <div className="space-y-2">

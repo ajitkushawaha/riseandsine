@@ -73,6 +73,14 @@ export const Programs = () => {
             </motion.article>
           ))}
         </div>
+
+        <div className="mt-12 text-center">
+          <a href="/price" className="inline-flex items-center gap-3 rounded-2xl bg-accent px-8 py-4 text-sm font-bold uppercase tracking-widest text-slate-950 transition-transform hover:scale-105 active:scale-95 shadow-xl">
+            View All Pricing
+            <ArrowRight size={18} />
+          </a>
+        </div>
+
       </div>
     </section>
   );
