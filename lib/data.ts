@@ -162,11 +162,11 @@ export const programs = [
   {
     id: "quick-brush-up",
     title: "Quick Foundation",
-    price: "$360",
-    duration: "3 Lessons + Car for Test",
+    price: "$390",
+    duration: "5 Lessons(60 min) + Car for Test",
     summary: "Ideal for experienced drivers needing to purge old habits or get familiar with local Kelowna testing routes.",
     bullets: [
-      "3 full 90-minute sessions",
+      "5 full 60-minute sessions",
       "Route-specific orientation",
       "Mirror habit correction",
       "School zone & speed control focus",

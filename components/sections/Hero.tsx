@@ -56,8 +56,8 @@ export const Hero = () => {
           className="mt-12 grid grid-cols-2 gap-4 border-t border-white/12 pt-8 sm:grid-cols-3"
         >
            <div className="rounded-3xl border border-white/10 bg-white/6 p-5 backdrop-blur-sm">
-              <p className="text-2xl font-semibold text-white tracking-tighter sm:text-3xl">$360</p>
-              <p className="mt-2 text-[10px] uppercase tracking-[0.22em] text-white/48 sm:text-sm">3 lessons + car special</p>
+              <p className="text-2xl font-semibold text-white tracking-tighter sm:text-3xl">$390</p>
+              <p className="mt-2 text-[10px] uppercase tracking-[0.22em] text-white/48 sm:text-sm">5 lessons + car special</p>
             </div>
             <div className="rounded-3xl border border-white/10 bg-white/6 p-5 backdrop-blur-sm">
               <p className="text-2xl font-semibold text-white tracking-tighter sm:text-3xl">10+</p>
