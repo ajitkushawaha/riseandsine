@@ -197,7 +197,7 @@ export const Pricing = () => {
                       <option className="bg-ink" value="90m Lessons - 3 Lessons">$270 - 90m Lessons (3)</option>
                       <option className="bg-ink" value="90m Lessons - 5 Lessons">$440 - 90m Lessons (5)</option>
                       <option className="bg-ink" value="90m Lessons - 10 Lessons">$875 - 90m Lessons (10)</option>
-                      <option className="bg-ink" value="90m Lessons - 5 + Road Test">$590 - 90m Lessons (5) + Road Test</option>
+                      <option className="bg-ink" value="90m Lessons - 5 + Road Test">$520 - 90m Lessons (5) + Road Test</option>
                       <option className="bg-ink" value="90m Lessons - 10 + Road Test">$950 - 90m Lessons (10) + Road Test</option>
                       <option className="bg-ink" value="Custom Package">Custom Package - Please specify in message</option>
                     </select>

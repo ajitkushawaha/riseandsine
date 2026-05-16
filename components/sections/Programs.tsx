@@ -53,14 +53,7 @@ export const Programs = () => {
                 <p className="mt-2 text-white/40 leading-relaxed text-sm">{program.summary}</p>
 
                 <ul className="mt-10 space-y-4">
-                  {program.bullets.map((bullet) => (
-                    <li key={bullet} className="flex items-center gap-3 text-white/72 text-sm">
-                      <div className="flex h-5 w-5 items-center justify-center rounded-full bg-accent/10">
-                        <CheckCircle2 size={12} className="text-accent" />
-                      </div>
-                      {bullet}
-                    </li>
-                  ))}
+                 
                 </ul>
 
                 <div className="mt-auto pt-10">

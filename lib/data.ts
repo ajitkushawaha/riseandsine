@@ -130,48 +130,62 @@ export const testimonials = [
 
 export const programs = [
   {
-    id: "standard-prep",
-    title: "The Standard Prep",
-    price: "$520",
-    duration: "5 Lessons + Car for Test",
-    summary: "Our most popular package in Kelowna, focusing on comprehensive road test readiness and hazard perception.",
-    bullets: [
-      "5 full 90-minute sessions",
-      "Mock road test evaluation",
-      "Parallel & Reverse Stall parking",
-      "Highway & city flow management",
-      "Dual-control car for road test day"
-    ],
+    id: "60m-1-lesson",
+    title: "Single Drive Session",
+    price: "$80",
+    duration: "1 Lesson (60m)",
+    summary:
+      "Perfect for quick practice, confidence boosting, or a pre-road test refresher.",
     image: "/gallery/IMG_8144-scaled-e1642396804704.jpg"
   },
+
   {
-    id: "starter-program",
-    title: "Starter Program",
-    price: "$850",
-    duration: "10 Lessons(90 min) + Car for Test ",
-    summary: "For beginners who want to build a rock-solid foundation, moving from basic controls to complex BC interior highways.",
-    bullets: [
-      "10 Lessons(90 min) ",
-      "Complete controls mastery",
-      "Advanced hazard scanning",
-      "Winter condition strategies",
-      "Road test booking assistance"
-    ],
+    id: "60m-3-lessons",
+    title: "Confidence Builder",
+    price: "$240",
+    duration: "3 Lessons (60m)",
+    summary:
+      "A short and affordable package designed to improve basic driving confidence.",
     image: "/gallery/IMG_8151_2-scaled-e1642397646610.jpg"
   },
+
   {
-    id: "quick-brush-up",
-    title: "Quick Foundation",
-    price: "$390",
-    duration: "5 Lessons",
-    summary: "Ideal for experienced drivers needing to purge old habits or get familiar with local Kelowna testing routes.",
-    bullets: [
-      "5 full 60-minute sessions",
-      "Route-specific orientation",
-      "Mirror habit correction",
-      "School zone & speed control focus",
-      "Dual-control car for road test day"
-    ],
+    id: "60m-5-lessons-road-test",
+    title: "Standard Prep",
+    price: "$470",
+    duration: "5 Lessons + Car for Road Test",
+    summary:
+      "Most popular package focused on full road test preparation and confidence.",
+    image: "/gallery/IMG_8273-scaled-e1642398023397.jpg"
+  },
+
+  {
+    id: "60m-10-lessons-road-test",
+    title: "Ultimate Road Test Program",
+    price: "$850",
+    duration: "10 Lessons + Car for Road Test",
+    summary:
+      "Complete beginner-to-road-test training with maximum support.",
+    image: "/gallery/IMG_8144-scaled-e1642396804704.jpg"
+  },
+
+  {
+    id: "90m-5-lessons-road-test",
+    title: "Premium Road Test Prep",
+    price: "$520",
+    duration: "5 Lessons + Car for Road Test",
+    summary:
+      "Longer sessions for faster improvement and better road test readiness.",
+    image: "/gallery/IMG_8151_2-scaled-e1642397646610.jpg"
+  },
+
+  {
+    id: "90m-10-lessons-road-test",
+    title: "Elite Driving Mastery",
+    price: "$950",
+    duration: "10 Lessons + Car for Road Test",
+    summary:
+      "Our premium all-in-one package for serious learners and guaranteed confidence.",
     image: "/gallery/IMG_8273-scaled-e1642398023397.jpg"
   }
 ];
