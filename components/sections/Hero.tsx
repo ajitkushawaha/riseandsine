@@ -57,7 +57,7 @@ export const Hero = () => {
         >
            <div className="rounded-3xl border border-white/10 bg-white/6 p-5 backdrop-blur-sm">
               <p className="text-2xl font-semibold text-white tracking-tighter sm:text-3xl">$390</p>
-              <p className="mt-2 text-[10px] uppercase tracking-[0.22em] text-white/48 sm:text-sm">5 lessons + car special</p>
+              <p className="mt-2 text-[10px] uppercase tracking-[0.22em] text-white/48 sm:text-sm">5 lessons</p>
             </div>
             <div className="rounded-3xl border border-white/10 bg-white/6 p-5 backdrop-blur-sm">
               <p className="text-2xl font-semibold text-white tracking-tighter sm:text-3xl">10+</p>

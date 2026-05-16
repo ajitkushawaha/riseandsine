@@ -148,10 +148,10 @@ export const programs = [
     id: "starter-program",
     title: "Starter Program",
     price: "$850",
-    duration: "8 Lessons total",
+    duration: "10 Lessons(90 min) + Car for Test ",
     summary: "For beginners who want to build a rock-solid foundation, moving from basic controls to complex BC interior highways.",
     bullets: [
-      "8 full 90-minute sessions",
+      "10 Lessons(90 min) ",
       "Complete controls mastery",
       "Advanced hazard scanning",
       "Winter condition strategies",
@@ -163,7 +163,7 @@ export const programs = [
     id: "quick-brush-up",
     title: "Quick Foundation",
     price: "$390",
-    duration: "5 Lessons(60 min) + Car for Test",
+    duration: "5 Lessons",
     summary: "Ideal for experienced drivers needing to purge old habits or get familiar with local Kelowna testing routes.",
     bullets: [
       "5 full 60-minute sessions",
