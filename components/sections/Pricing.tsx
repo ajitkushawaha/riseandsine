@@ -138,12 +138,12 @@ export const Pricing = () => {
 
   return (
     <>
-      <section id="pricing" className="section-shell">
+      <section id="pricing" className="">
         <div className="mx-auto max-w-7xl px-6 py-10">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-            <div>
+          <div className="flex flex-col gap-6 items-center justify-center">
+            <div className="text-center">
               <SectionEyebrow>Pricing</SectionEyebrow>
-              <h2 className="mt-8 max-w-3xl font-headline text-4xl font-semibold text-white sm:text-5xl">
+              <h2 className="mt-8 font-headline text-4xl font-semibold text-white sm:text-5xl">
                 Full lesson pricing, clearly laid out.
               </h2>
             </div>

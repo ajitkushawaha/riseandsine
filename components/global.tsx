@@ -74,8 +74,8 @@ export const Navbar = () => {
                 href={link.href}
                 className={`rounded-full px-5 py-2 text-xs font-bold uppercase tracking-widest transition-all ${
                   scrolled
-                    ? "text-white/50 hover:bg-white/5 hover:text-white"
-                    : "text-black hover:bg-white-pure/10 hover:text-white-pure"
+                    ? "text-white/50 hover:bg-white/5 hover:text-black"
+                    : "text-black hover:bg-white-pure/10 hover:text-black"
                 }`}
               >
                 {link.name}
