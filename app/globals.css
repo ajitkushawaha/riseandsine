@@ -1,33 +1,56 @@
 @import "tailwindcss";
 
+:root {
+  /* Light Theme (Default) */
+  --bg-ink: #ffffff;
+  --bg-ink-soft: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-2: #f1f5f9;
+  --color-accent: #facd63;
+  --color-accent-soft: #fef8e7;
+  --color-accent-red: #dd3333;
+  --color-line: rgba(15, 23, 42, 0.08);
+  --white: #060a12;
+  --white-pure: #ffffff;
+  --body-bg-gradient: radial-gradient(circle at top, rgba(250, 205, 99, 0.15), transparent 45%),
+                      linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+  --selection-color: #3f2d0a;
+  --hero-overlay-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 55%, #ffffff 100%);
+  --card-gradient: linear-gradient(165deg, #ffffff, #ffffff);
+  --proof-card-bg: radial-gradient(circle at top left, rgba(250, 205, 99, 0.12), #ffffff 60%);
+}
+
 @theme {
   --font-headline: var(--font-headline);
   --font-sans: var(--font-sans);
 
-  --color-ink: #060a12;
-  --color-ink-soft: #0c1320;
-  --color-surface: #0f1724;
-  --color-surface-2: #131d2d;
-  --color-accent: #f5be5c;
-  --color-accent-soft: #f3d9a3;
-  --color-line: rgba(255, 255, 255, 0.1);
+  --color-ink: var(--bg-ink);
+  --color-ink-soft: var(--bg-ink-soft);
+  --color-surface: var(--bg-surface);
+  --color-surface-2: var(--bg-surface-2);
+  --color-accent: var(--color-accent);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-accent-red: var(--color-accent-red);
+  --color-line: var(--color-line);
+  --color-white: var(--white);
+  --color-white-pure: var(--white-pure);
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   body {
-    @apply bg-ink font-sans antialiased text-white;
-    background-image:
-      radial-gradient(circle at top, rgba(245, 190, 92, 0.1), transparent 30%),
-      linear-gradient(180deg, #060a12 0%, #09111b 40%, #060a12 100%);
+    @apply bg-ink font-sans antialiased text-white transition-colors duration-300;
+    background-image: var(--body-bg-gradient);
+    background-attachment: fixed;
   }
 
   ::selection {
-    background: rgba(245, 190, 92, 0.28);
-    color: #fff8ea;
+    background: rgba(250, 205, 99, 0.28);
+    color: var(--selection-color);
   }
 
   a,
@@ -45,31 +68,33 @@
   }
 
   .panel-card {
-    @apply rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.18)] backdrop-blur-sm sm:p-10;
+    @apply rounded-[2rem] border border-line bg-surface p-6 shadow-xl backdrop-blur-sm sm:p-10;
   }
 
   .program-card {
-    @apply relative flex min-h-[460px] flex-col overflow-hidden rounded-[2.5rem] border border-white/[0.08] bg-[linear-gradient(165deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02)_50%,rgba(6,10,18,0.4))] p-6 shadow-[0_40px_100px_rgba(0,0,0,0.3)] backdrop-blur-md transition-all duration-500 sm:p-10 hover:border-accent/30 hover:shadow-[0_50px_120px_rgba(245,190,92,0.12)] hover:-translate-y-2;
+    @apply relative flex min-h-[460px] flex-col overflow-hidden rounded-[2.5rem] border border-line p-6 shadow-xl transition-all duration-500 sm:p-10 hover:border-accent/40 hover:-translate-y-2;
+    background-image: var(--card-gradient);
   }
 
   .rate-row-card {
-    @apply flex items-center justify-between rounded-3xl border border-white/[0.05] bg-white/[0.03] p-5 transition-colors hover:border-white/12 hover:bg-white/[0.06];
+    @apply flex items-center justify-between rounded-3xl border border-line bg-surface p-5 transition-colors hover:bg-surface-2;
   }
 
   .timeline-card {
-    @apply rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_20px_70px_rgba(0,0,0,0.16)] sm:p-10;
+    @apply rounded-[2rem] border border-line bg-surface p-6 shadow-lg sm:p-10;
   }
 
   .proof-card {
-    @apply rounded-[2rem] border border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(245,190,92,0.14),rgba(255,255,255,0.03)_46%,rgba(255,255,255,0.02))] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.2)] sm:p-10;
+    @apply rounded-[2rem] border border-line p-6 shadow-lg sm:p-10;
+    background-image: var(--proof-card-bg);
   }
 
   .button-primary {
-    @apply inline-flex items-center gap-3 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-slate-950 shadow-[0_20px_50px_rgba(245,190,92,0.25)] hover:-translate-y-0.5 hover:bg-accent-soft;
+    @apply inline-flex items-center gap-3 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-slate-950 shadow-[0_20px_50px_rgba(250,205,99,0.25)] hover:-translate-y-0.5 hover:bg-accent-soft;
   }
 
   .button-secondary {
-    @apply inline-flex items-center gap-3 rounded-full border border-white/14 bg-white/[0.05] px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-white hover:-translate-y-0.5 hover:bg-white/[0.09];
+    @apply inline-flex items-center gap-3 rounded-full border border-white-pure/14 bg-white-pure/[0.05] px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-white-pure hover:-translate-y-0.5 hover:bg-white-pure/[0.09];
   }
 
   .button-dark {

@@ -18,12 +18,13 @@ export const About = () => {
 
   return (
     <section id="about" className="section-shell">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl ">
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            transition={{ duration: 0.8 }}
+           className="px-6"
         >
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <SectionEyebrow>About Driving School</SectionEyebrow>
@@ -51,7 +52,7 @@ export const About = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-16 relative h-[400px] sm:h-[600px] overflow-hidden rounded-[2.5rem] border border-white/10 shadow-[0_50px_100px_rgba(0,0,0,0.5)]"
+            className="mt-16 relative h-[400px] sm:h-[600px] overflow-hidden rounded-[2.5rem] border border-white/10 "
           >
             <Image 
                 src="/about_team.jpg" 

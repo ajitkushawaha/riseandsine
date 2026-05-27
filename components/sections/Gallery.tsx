@@ -51,7 +51,7 @@ export const Gallery = () => {
             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
             <div className="absolute bottom-0 left-0 p-10 transform transition-transform duration-500 group-hover:translate-y-[-10px]">
               <p className="text-accent font-bold uppercase tracking-widest text-sm mb-3">{galleryImages[0].alt}</p>
-              <h3 className="font-headline text-3xl font-bold text-white leading-tight">
+              <h3 className="font-headline text-3xl font-bold text-white-pure leading-tight">
                 {galleryImages[0].detail}
               </h3>
             </div>
@@ -76,7 +76,7 @@ export const Gallery = () => {
                 <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="absolute bottom-0 left-0 p-8 transform translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                     <p className="text-accent font-bold uppercase tracking-widest text-[10px] mb-1">{image.alt}</p>
-                    <h3 className="text-lg font-bold text-white">{image.detail}</h3>
+                    <h3 className="text-lg font-bold text-white-pure">{image.detail}</h3>
                 </div>
              </motion.div>
           ))}
@@ -93,21 +93,21 @@ export const Gallery = () => {
             >
                <button 
                 onClick={(e) => { e.stopPropagation(); setSelectedGalleryIndex(null); }}
-                className="absolute right-8 top-8 z-50 text-white/40 transition-colors hover:text-white"
+                className="absolute right-8 top-8 z-50 text-white-pure/40 transition-colors hover:text-white-pure"
                >
                 <X size={40} />
                </button>
 
                <button 
                 onClick={(e) => { e.stopPropagation(); prevImage(); }}
-                className="absolute left-8 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white/5 p-4 text-white/40 transition-all shadow-2xl hover:bg-white/10 hover:text-white"
+                className="absolute left-8 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white-pure/5 p-4 text-white-pure/40 transition-all shadow-2xl hover:bg-white-pure/10 hover:text-white-pure"
                >
                 <ChevronLeft size={32} />
                </button>
 
                <button 
                 onClick={(e) => { e.stopPropagation(); nextImage(); }}
-                className="absolute right-8 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white/5 p-4 text-white/40 transition-all shadow-2xl hover:bg-white/10 hover:text-white"
+                className="absolute right-8 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white-pure/5 p-4 text-white-pure/40 transition-all shadow-2xl hover:bg-white-pure/10 hover:text-white-pure"
                >
                 <ChevronRight size={32} />
                </button>

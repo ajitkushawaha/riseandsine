@@ -12,7 +12,7 @@ export const Testimonials = () => {
 
   return (
     <section id="reviews" className="relative pt-12 ">
-      <div className="mx-auto max-w-7xl ">
+      <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 text-center lg:text-left">
           <SectionEyebrow>Student voices</SectionEyebrow>
           <h2 className="mt-8 font-headline text-5xl font-bold text-white tracking-tight sm:text-6xl">
@@ -43,14 +43,14 @@ export const Testimonials = () => {
                       ${index % 8 === 0 ? 'xl:left-0 xl:translate-x-0' : index % 8 === 7 ? 'xl:right-0 xl:translate-x-0' : ''}
                     `}
                   >
-                    <div className="rounded-4xl border border-white/20 bg-slate-950/95 p-6 sm:p-8 shadow-2xl backdrop-blur-3xl ring-1 ring-white/10">
+                    <div className="rounded-4xl border border-line bg-surface p-6 sm:p-8 shadow-2xl backdrop-blur-3xl ring-1 ring-line">
                       <div className="mb-3 flex gap-1 text-accent">
                         {Array.from({ length: 5 }).map((_, i) => <Star key={i} size={14} className="fill-current" />)}
                       </div>
                       <p className="text-base sm:text-lg leading-relaxed text-white font-medium">
                         "{student.quote}"
                       </p>
-                      <div className="mt-8 flex items-center gap-4 border-t border-white/10 pt-6">
+                      <div className="mt-8 flex items-center gap-4 border-t border-line pt-6">
                         <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent/20">
                             <CheckCircle2 size={16} className="text-accent" />
                         </div>
@@ -61,7 +61,7 @@ export const Testimonials = () => {
                       </div>
                     </div>
                     {/* Tail/Arrow for the tooltip */}
-                    <div className={`absolute top-full -mt-0.5 h-3 w-3 rotate-45 border-b border-r border-white/20 bg-slate-950/95 shadow-2xl
+                    <div className={`absolute top-full -mt-0.5 h-3 w-3 rotate-45 border-b border-r border-line bg-surface shadow-2xl
                       ${index % 2 === 0 ? 'left-8 sm:left-1/2 sm:-translate-x-1/2' : 'right-8 sm:left-1/2 sm:-translate-x-1/2'}
                     `} />
                   </motion.div>
@@ -79,8 +79,8 @@ export const Testimonials = () => {
                 <div className={`relative aspect-square overflow-hidden rounded-3xl border-2 transition-all duration-500 group-hover:shadow-[0_0_30px_rgba(245,190,92,0.3)] ${
                   hoveredIndex === index ? 'border-accent shadow-[0_0_30px_rgba(245,190,92,0.3)]' : 'border-white/5 group-hover:border-accent/40'
                 }`}>
-                  <div className={`relative h-full w-full transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110 ${
-                      hoveredIndex === index ? 'grayscale-0 scale-110' : 'grayscale'
+                  <div className={`relative h-full w-full transition-all duration-700 group-hover:scale-110 ${
+                      hoveredIndex === index ? 'scale-110' : ''
                   }`}>
                     <Image 
                       src={student.image} 

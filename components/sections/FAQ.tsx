@@ -7,7 +7,7 @@ import { SectionEyebrow } from "@/components/global";
 import { faqData } from "@/lib/data";
 
 export const FAQ = () => {
-    const [openIndex, setOpenIndex] = useState<number | null>(0);
+    const [openQuestion, setOpenQuestion] = useState<string | null>(null);
 
     return (
         <section id="faqs" className="section-shell">
@@ -24,12 +24,12 @@ export const FAQ = () => {
                 </div>
 
                 <div className="mx-auto max-w-4xl space-y-4">
-                    {faqData.map((item, index) => (
+                    {faqData.map((item) => (
                         <FAQItem 
-                            key={index}
+                            key={item.question}
                             item={item}
-                            isOpen={openIndex === index}
-                            onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                            isOpen={openQuestion === item.question}
+                            onClick={() => setOpenQuestion(openQuestion === item.question ? null : item.question)}
                         />
                     ))}
                 </div>

@@ -107,7 +107,7 @@ export const BlogContent = ({ post, relatedPosts }: BlogContentProps) => {
               src={post.image} 
               alt={post.title} 
               fill
-              className="object-contain grayscale transition-all duration-[3s] group-hover:grayscale-0 group-hover:scale-105" 
+              className="object-contain transition-all duration-[3s] group-hover:scale-105" 
             />
             <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(6,10,18,0.8)_0%,transparent_40%),linear-gradient(to_bottom,rgba(6,10,18,0.4)_0%,transparent_20%)]" />
           </motion.div>
@@ -216,7 +216,7 @@ export const BlogContent = ({ post, relatedPosts }: BlogContentProps) => {
                 {relatedPosts.map((post, idx) => (
                     <Link key={post.id} href={`/blog/${post.id}`} className="group block">
                         <div className="relative aspect-3/4 overflow-hidden rounded-[3rem] bg-white/5 border border-white/5 transition-all duration-700 group-hover:border-accent/40 group-hover:shadow-[0_40px_100px_rgba(0,0,0,0.5)]">
-                            <Image src={post.image} fill className="object-cover grayscale transition-all duration-[2s] group-hover:grayscale-0 group-hover:scale-110" alt="" />
+                            <Image src={post.image} fill className="object-cover transition-all duration-[2s] group-hover:scale-110" alt="" />
                             <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80" />
                             <div className="absolute bottom-10 left-10 right-10">
                                 <div className="flex items-center gap-3 mb-4">

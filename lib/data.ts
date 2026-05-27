@@ -1,25 +1,25 @@
 export const galleryImages = [
-  {
+  { id:1,
     src: "/gimages/resized-image-Promo-scaled.jpeg",
     alt: "Rise n Shine dual-control car in Kelowna",
     detail: "Our dual-control safety vehicles ensure a stress-free learning environment for new drivers in BC."
   },
-  {
+  { id:2,
     src: "/gimages/Promo-Facebook-News-Feed-Image-1.jpeg",
     alt: "Student learning intersection safety in West Kelowna",
     detail: "Mastering complex intersections and scanning techniques with our expert instructors."
   },
-  {
+  {id:3,
     src: "/gimages/Promo-Facebook-News-Feed-Image-2.jpeg",
     alt: "ICBC Mock Road Test simulation",
     detail: "Get prepared with our simulated road tests that follow the exact ICBC examiner marking sheets."
   },
-  {
+  {id:4,
     src: "/gimages/Promo-Facebook-News-Feed-Image-3.jpeg",
     alt: "Parallel parking training on Kelowna streets",
     detail: "Precision parking techniques made simple through our proven step-by-step coaching method."
   },
-  {
+  {id:5,
     src: "/gimages/Promo-Facebook-News-Feed-Image-4.jpeg",
     alt: "Highway driving lessons on Highway 97 BC",
     detail: "Building confidence for high-speed merging and lane changes on the Okanagan's busiest routes."
@@ -129,6 +129,21 @@ export const testimonials = [
 ];
 
 export const programs = [
+   {
+    id: "quick-brush-up",
+    title: "Quick Foundation",
+    price: "$360",
+    duration: "3 Lessons + Car for Test",
+    summary: "Ideal for experienced drivers needing to purge old habits or get familiar with local Kelowna testing routes.",
+    bullets: [
+      "3 full 90-minute sessions",
+      "Route-specific orientation",
+      "Mirror habit correction",
+      "School zone & speed control focus",
+      "Dual-control car for road test day"
+    ],
+    image: "/gallery/IMG_8273-scaled-e1642398023397.jpg"
+  },
   {
     id: "60m-1-lesson",
     title: "Single Drive Session",
@@ -148,7 +163,6 @@ export const programs = [
       "A short and affordable package designed to improve basic driving confidence.",
     image: "/gallery/IMG_8151_2-scaled-e1642397646610.jpg"
   },
-
   {
     id: "60m-5-lessons-road-test",
     title: "Standard Prep",

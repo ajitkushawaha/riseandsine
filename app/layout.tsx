@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { CursorCarFollower } from "@/components/CursorCarFollower";
 
 const poppins = Poppins({
   variable: "--font-headline",
@@ -163,6 +164,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${inter.variable} font-sans antialiased`}>
         {/* Analytics Placeholder - Update with your actual GA ID */}
         <GoogleAnalytics gaId="G-XXXXXXXXXX" />
+        <CursorCarFollower />
         {children}
       </body>
     </html>

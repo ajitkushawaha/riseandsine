@@ -36,7 +36,7 @@ export const Contact = () => {
 
       setStatus("success");
       setFormData({ name: "", phone: "", program: "Select a package", message: "" });
-      
+
       // Reset success state after 5 seconds
       setTimeout(() => setStatus("idle"), 5000);
     } catch (error) {
@@ -58,7 +58,7 @@ export const Contact = () => {
             <p className="mt-8 text-lg leading-relaxed text-white/50 sm:mt-10 sm:text-xl sm:leading-relaxed max-w-md">
               Whether you're starting from scratch or just need a final brush-up before your test, we're here to help in Kelowna.
             </p>
-            
+
             <div className="mt-12 space-y-6 sm:space-y-8">
               <div className="flex items-center gap-5 sm:gap-6 group">
                 <a href="tel:2503172175" className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl sm:rounded-3xl bg-white/5 text-accent transition-all group-hover:bg-accent group-hover:text-slate-950 shadow-xl">
@@ -84,53 +84,47 @@ export const Contact = () => {
 
           <div className="rounded-[2.5rem] sm:rounded-[3.5rem] border border-white/10 bg-white/5 p-6 sm:p-10 lg:p-12 backdrop-blur-2xl shadow-3xl relative overflow-hidden">
             <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
-               <div className="grid gap-5 sm:gap-6 sm:grid-cols-2">
-                 <div className="space-y-2">
-                   <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 ml-4">Learner Name</label>
-                   <input required type="text" name="name" value={formData.name} onChange={handleChange} className="w-full rounded-2xl border border-white/10 bg-white/5 px-6 py-3.5 sm:py-4 text-white focus:border-accent focus:outline-none transition-colors placeholder:text-white/20" placeholder="Full name" />
-                 </div>
-                 <div className="space-y-2">
-                   <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 ml-4">Phone Number</label>
-                   <input required type="tel" name="phone" value={formData.phone} onChange={handleChange} className="w-full rounded-2xl border border-white/10 bg-white/5 px-6 py-3.5 sm:py-4 text-white focus:border-accent focus:outline-none transition-colors placeholder:text-white/20" placeholder="Contact number" />
-                 </div>
-               </div>
-               <div className="space-y-2">
-                  <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 ml-4">Our Programs</label>
-                  <select name="program" value={formData.program} onChange={handleChange} className="w-full rounded-2xl border border-white/10 bg-white/5 px-6 py-3.5 sm:py-4 text-white focus:border-accent focus:outline-none transition-all appearance-none cursor-pointer">
-                    <option className="bg-ink" value="Select a package">Select a package</option>
-                    <option className="bg-ink" value="60m Lessons - 1 Lesson">$80 - 60m Lesson (1)</option>
-                    <option className="bg-ink" value="60m Lessons - 3 Lessons">$240 - 60m Lessons (3)</option>
-                    <option className="bg-ink" value="60m Lessons - 5 Lessons">$390 - 60m Lessons (5)</option>
-                    <option className="bg-ink" value="60m Lessons - 10 Lessons">$775 - 60m Lessons (10)</option>
-                    <option className="bg-ink" value="60m Lessons - 5 + Road Test">$470 - 60m Lessons (5) + Road Test</option>
-                    <option className="bg-ink" value="60m Lessons - 10 + Road Test">$850 - 60m Lessons (10) + Road Test</option>
-                    <option className="bg-ink" value="90m Lessons - 1 Lesson">$90 - 90m Lesson (1)</option>
-                    <option className="bg-ink" value="90m Lessons - 3 Lessons">$270 - 90m Lessons (3)</option>
-                    <option className="bg-ink" value="90m Lessons - 5 Lessons">$440 - 90m Lessons (5)</option>
-                    <option className="bg-ink" value="90m Lessons - 10 Lessons">$875 - 90m Lessons (10)</option>
-                    <option className="bg-ink" value="90m Lessons - 5 + Road Test">$520 - 90m Lessons (5) + Road Test</option>
-                    <option className="bg-ink" value="90m Lessons - 10 + Road Test">$950 - 90m Lessons (10) + Road Test</option>
-                    <option className="bg-ink" value="Custom Package">Custom Package - Please specify in message</option>
-                  </select>
-               </div>
-               <div className="space-y-2">
-                   <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 ml-4">Message</label>
-                   <textarea required name="message" value={formData.message} onChange={handleChange} rows={4} className="w-full rounded-3xl border border-white/10 bg-white/5 px-6 py-4 text-white focus:border-accent focus:outline-none transition-colors placeholder:text-white/20" placeholder="Tell us about your driving experience..."></textarea>
-               </div>
-               <button 
-                 disabled={status === "loading" || status === "success"}
-                 className="button-primary w-full justify-center text-lg py-5 group transition-all disabled:opacity-70 disabled:cursor-not-allowed"
-               >
-                 {status === "loading" ? "Sending..." : status === "success" ? "Message Sent!" : "Send Inquiry"}
-                 {status === "success" ? (
-                   <CheckCircle2 size={20} className="text-green-500" />
-                 ) : (
-                   <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
-                 )}
-               </button>
-               {status === "error" && (
-                 <p className="text-red-400 text-sm text-center mt-4">Failed to send message. Please try again.</p>
-               )}
+              <div className="grid gap-5 sm:gap-6 sm:grid-cols-2">
+                <div className="space-y-2">
+                  <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 ml-4">Learner Name</label>
+                  <input required type="text" name="name" value={formData.name} onChange={handleChange} className="w-full rounded-2xl border border-white/10 bg-white/5 px-6 py-3.5 sm:py-4 text-white focus:border-accent focus:outline-none transition-colors placeholder:text-white/20" placeholder="Full name" />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 ml-4">Phone Number</label>
+                  <input required type="tel" name="phone" value={formData.phone} onChange={handleChange} className="w-full rounded-2xl border border-white/10 bg-white/5 px-6 py-3.5 sm:py-4 text-white focus:border-accent focus:outline-none transition-colors placeholder:text-white/20" placeholder="Contact number" />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 ml-4">Our Programs</label>
+                <select name="program" value={formData.program} onChange={handleChange} className="w-full rounded-2xl border border-white/10 bg-white/5 px-6 py-3.5 sm:py-4 text-white focus:border-accent focus:outline-none transition-all appearance-none cursor-pointer">
+                  <option className="bg-ink" value="Select a package">Select a package</option>
+                  <option className="bg-ink" value="90m Lessons - 1 Lesson">$90 - 90m Lesson (1)</option>
+                  <option className="bg-ink" value="90m Lessons - 3 Lessons">$270 - 90m Lessons (3)</option>
+                  <option className="bg-ink" value="90m Lessons - 5 Lessons">$440 - 90m Lessons (5)</option>
+                  <option className="bg-ink" value="90m Lessons - 10 Lessons">$875 - 90m Lessons (10)</option>
+                  <option className="bg-ink" value="90m Lessons - 5 + Road Test">$520 - 90m Lessons (5) + Road Test</option>
+                  <option className="bg-ink" value="90m Lessons - 10 + Road Test">$950 - 90m Lessons (10) + Road Test</option>
+                  <option className="bg-ink" value="Custom Package">Custom Package - Please specify in message</option>
+                </select>
+              </div>
+              <div className="space-y-2">
+                <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 ml-4">Message</label>
+                <textarea required name="message" value={formData.message} onChange={handleChange} rows={4} className="w-full rounded-3xl border border-white/10 bg-white/5 px-6 py-4 text-white focus:border-accent focus:outline-none transition-colors placeholder:text-white/20" placeholder="Tell us about your driving experience..."></textarea>
+              </div>
+              <button
+                disabled={status === "loading" || status === "success"}
+                className="button-primary w-full justify-center text-lg py-5 group transition-all disabled:opacity-70 disabled:cursor-not-allowed"
+              >
+                {status === "loading" ? "Sending..." : status === "success" ? "Message Sent!" : "Send Inquiry"}
+                {status === "success" ? (
+                  <CheckCircle2 size={20} className="text-green-500" />
+                ) : (
+                  <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
+                )}
+              </button>
+              {status === "error" && (
+                <p className="text-red-400 text-sm text-center mt-4">Failed to send message. Please try again.</p>
+              )}
             </form>
           </div>
         </div>

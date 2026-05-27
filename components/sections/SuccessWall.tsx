@@ -52,7 +52,7 @@ export const SuccessWall = () => {
                     alt={item.alt}
                     width={400}
                     height={400}
-                    className="w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+                    className="w-full object-cover transition-all duration-700 group-hover:scale-105"
                     loading="lazy"
                 />
             </div>

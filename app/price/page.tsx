@@ -1,14 +1,12 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import { Navbar, Footer, MobileDock } from "@/components/global";
-
-const Pricing = dynamic(() => import("@/components/sections/Pricing"), { ssr: true });
+import Pricing from "@/components/sections/Pricing";
 
 export default function PricePage() {
   return (
     <div className="bg-ink font-sans selection:bg-accent/30 selection:text-ink">
       <Navbar />
-      <main>
+      <main className="pt-24 lg:pt-28">
         <Pricing />
       </main>
       <Footer />

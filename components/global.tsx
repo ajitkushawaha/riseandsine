@@ -17,10 +17,10 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 
-export function SectionEyebrow({ children }: { children: React.ReactNode }) {
+export function SectionEyebrow({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
-    <div className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/6 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-white/70">
-      <span className="h-2 w-2 rounded-full bg-accent" />
+    <div className={`inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/6 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-white ${className}`}>
+      <span className="h-2 w-2 rounded-full " />
       {children}
     </div>
   );
@@ -47,10 +47,14 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className={`fixed inset-x-0 top-0 z-100 transition-all duration-500 ${scrolled ? "bg-black/80 py-4 backdrop-blur-2xl shadow-xl" : "bg-transparent py-8"
-        }`}>
+      <nav className={`fixed inset-x-0 top-0 z-100 transition-all duration-500 ${
+        scrolled
+          ? "bg-white-pure py-4 backdrop-blur-2xl shadow-xl "
+          : "bg-white-pure py-4 shadow-sm"
+      }`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
           <Link
+            id="navbar-logo"
             href={'/'}
           >
             <Image
@@ -68,21 +72,34 @@ export const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="rounded-full px-5 py-2 text-xs font-bold uppercase tracking-widest text-white/50 transition-all hover:bg-white/5 hover:text-white"
+                className={`rounded-full px-5 py-2 text-xs font-bold uppercase tracking-widest transition-all ${
+                  scrolled
+                    ? "text-white/50 hover:bg-white/5 hover:text-white"
+                    : "text-black hover:bg-white-pure/10 hover:text-white-pure"
+                }`}
               >
                 {link.name}
               </a>
             ))}
-            <div className="mx-4 h-4 w-px bg-white/10" />
-            <a href="tel:2503172175" className="flex items-center gap-3 rounded-full bg-accent px-6 py-3 text-xs font-bold uppercase tracking-widest text-slate-950 transition-transform active:scale-95 hover:bg-white">
+            <div className={`mx-4 h-4 w-px ${scrolled ? "bg-white/10" : "bg-white-pure/20"}`} />
+            <a href="tel:2503172175" className="flex items-center gap-3 rounded-full bg-accent px-6 py-3 text-xs font-bold uppercase tracking-widest text-slate-950 transition-transform active:scale-95 hover:bg-white-pure">
               <Phone size={14} />
               250 317 2175
             </a>
           </div>
 
-          <button onClick={() => setMobileOpen(true)} className="rounded-2xl bg-white/5 p-3 text-white transition-colors hover:bg-white/10 lg:hidden">
-            <Menu size={24} />
-          </button>
+          <div className="flex items-center gap-3 lg:hidden">
+            <button
+              onClick={() => setMobileOpen(true)}
+              className={`rounded-2xl p-3 transition-colors ${
+                scrolled
+                  ? "bg-white/5 text-white hover:bg-white/10"
+                  : "bg-white/5 text-white hover:bg-white/20"
+              }`}
+            >
+              <Menu size={24} />
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -97,20 +114,20 @@ export const Navbar = () => {
           >
             <div className="flex flex-col h-full p-8">
               <div className="flex items-center justify-between mb-12">
-                <span className="font-headline text-2xl font-bold text-white">MENU</span>
-                <button onClick={() => setMobileOpen(false)} className="rounded-full bg-white/5 p-4 text-white">
+                <span className="font-headline text-2xl font-bold text-white-pure">MENU</span>
+                <button onClick={() => setMobileOpen(false)} className="rounded-full bg-white-pure/5 p-4 text-white-pure">
                   <X size={28} />
                 </button>
               </div>
               <div className="flex flex-col gap-8">
                 {navLinks.map((link) => (
-                  <a key={link.name} href={link.href} onClick={() => setMobileOpen(false)} className="text-4xl font-headline font-bold text-white/40 hover:text-accent transition-colors">
+                  <a key={link.name} href={link.href} onClick={() => setMobileOpen(false)} className="text-4xl font-headline font-bold text-white-pure/40 hover:text-accent transition-colors">
                     {link.name}
                   </a>
                 ))}
               </div>
-              <div className="mt-auto pt-10 border-t border-white/10">
-                <p className="text-sm uppercase tracking-widest text-white/30 mb-6">Book your lesson</p>
+              <div className="mt-auto pt-10 border-t border-white-pure/10">
+                <p className="text-sm uppercase tracking-widest text-white-pure/30 mb-6">Book your lesson</p>
                 <a href="tel:2503172175" className="flex items-center justify-between rounded-3xl bg-accent p-6 text-xl font-bold text-slate-950">
                   Call Satpal
                   <Phone size={24} />
@@ -126,7 +143,7 @@ export const Navbar = () => {
 
 export const Footer = () => {
   return (
-    <footer className="relative isolate overflow-hidden border-t border-white/8 bg-ink/50 pt-24 pb-32">
+    <footer className="relative isolate overflow-hidden border-t border-white/8 bg-ink/50 pt-12 ">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-16 lg:grid-cols-[1fr_0.5fr_0.5fr_1fr]">
           {/* Brand Column */}
@@ -201,9 +218,9 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-24 flex flex-col gap-6 border-t border-white/5 pt-12 sm:flex-row sm:items-center sm:justify-between text-[10px] font-bold uppercase tracking-[0.3em] text-white/20">
-          <p>© 2024 Rise n Shine Driving School. Excellence in Driver Education.</p>
-          <div className="flex gap-8">
+        <div className="mt-2 flex flex-col gap-6 border-t border-white/5 py-6 sm:flex-row sm:items-center sm:justify-between text-[10px] font-bold uppercase tracking-[0.3em] text-white/20">
+          <p className="text-black/60">© 2024 Rise n Shine Driving School. Excellence in Driver Education.</p>
+          <div className="flex gap-8 text-black/60">
             <span className="hover:text-white cursor-pointer transition-colors">Privacy</span>
             <span className="hover:text-white cursor-pointer transition-colors">Terms</span>
           </div>

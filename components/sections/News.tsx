@@ -45,7 +45,7 @@ export const News = () => {
                   <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent" />
                   
                   <div className="absolute top-6 left-6">
-                    <div className="rounded-full bg-white/10 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-white backdrop-blur-md">
+                    <div className="rounded-full bg-white-pure/10 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-white-pure backdrop-blur-md">
                       {post.category}
                     </div>
                   </div>
@@ -54,7 +54,7 @@ export const News = () => {
                     <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-2">
                       {post.date}
                     </p>
-                    <h3 className="font-headline text-2xl font-bold text-white line-clamp-2 leading-tight group-hover:text-accent transition-colors">
+                    <h3 className="font-headline text-2xl font-bold text-white-pure line-clamp-2 leading-tight group-hover:text-accent transition-colors">
                       {post.title}
                     </h3>
                   </div>
