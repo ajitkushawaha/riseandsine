@@ -144,44 +144,6 @@ export const programs = [
     ],
     image: "/gallery/IMG_8273-scaled-e1642398023397.jpg"
   },
-  {
-    id: "60m-1-lesson",
-    title: "Single Drive Session",
-    price: "$80",
-    duration: "1 Lesson (60m)",
-    summary:
-      "Perfect for quick practice, confidence boosting, or a pre-road test refresher.",
-    image: "/gallery/IMG_8144-scaled-e1642396804704.jpg"
-  },
-
-  {
-    id: "60m-3-lessons",
-    title: "Confidence Builder",
-    price: "$240",
-    duration: "3 Lessons (60m)",
-    summary:
-      "A short and affordable package designed to improve basic driving confidence.",
-    image: "/gallery/IMG_8151_2-scaled-e1642397646610.jpg"
-  },
-  {
-    id: "60m-5-lessons-road-test",
-    title: "Standard Prep",
-    price: "$470",
-    duration: "5 Lessons + Car for Road Test",
-    summary:
-      "Most popular package focused on full road test preparation and confidence.",
-    image: "/gallery/IMG_8273-scaled-e1642398023397.jpg"
-  },
-
-  {
-    id: "60m-10-lessons-road-test",
-    title: "Ultimate Road Test Program",
-    price: "$850",
-    duration: "10 Lessons + Car for Road Test",
-    summary:
-      "Complete beginner-to-road-test training with maximum support.",
-    image: "/gallery/IMG_8144-scaled-e1642396804704.jpg"
-  },
 
   {
     id: "90m-5-lessons-road-test",
