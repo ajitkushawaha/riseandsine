@@ -23,7 +23,7 @@ export async function POST(req: Request) {
 
     const mailOptions = {
       from: process.env.SMTP_USER,
-      to: process.env.SMTP_USER,
+      to: process.env.RECEIVER_EMAIL || process.env.SMTP_USER,
       subject: `New Inquiry from ${name} - Rise n Shine Driving School`,
       html: `
         <h2>New Contact Form Submission</h2>
