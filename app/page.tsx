@@ -16,6 +16,7 @@ const Gallery = dynamic(() => import("@/components/sections/Gallery"));
 const Proof = dynamic(() => import("@/components/sections/Proof"));
 const Testimonials = dynamic(() => import("@/components/sections/Testimonials"));
 const FAQ = dynamic(() => import("@/components/sections/FAQ"));
+const Policies = dynamic(() => import("@/components/sections/Policies"));
 const Contact = dynamic(() => import("@/components/sections/Contact"));
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
         <Gallery />
         <Proof />
         <Testimonials />
+        <Policies />
         <FAQ />
         <Contact />
       </main>
