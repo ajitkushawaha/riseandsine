@@ -51,15 +51,11 @@ export const Instructor = () => {
               
               <div className="mt-8 relative">
                  <p className="text-xl italic text-white/70 leading-relaxed relative z-10">
-                   "I am Satpal Kaur Hans – owner and head instructor at Rise n Shine Driving School. I have 20 years on the road professional driving experience and Class – 4 Instructor driving licence. I have always enjoyed driving and teaching people to drive safely gives me a sense of satisfaction."
-                 </p>
+                   "I am Satpal Kaur Hans – owner and head instructor at Rise n Shine Driving School. I have 20 years on the road professional driving experience. I have always enjoyed driving and teaching people to drive safely gives me a sense of satisfaction."
+                  </p>
               </div>
 
               <div className="mt-10 flex flex-wrap gap-4 justify-center lg:justify-start">
-                 <div className="flex items-center gap-3 rounded-full border border-white/5 bg-white/5 px-5 py-3">
-                    <CheckCircle2 size={16} className="text-accent" />
-                    <span className="text-sm font-bold text-white/80">Class-4 Licensed</span>
-                 </div>
                  <div className="flex items-center gap-3 rounded-full border border-white/5 bg-white/5 px-5 py-3">
                     <CheckCircle2 size={16} className="text-accent" />
                     <span className="text-sm font-bold text-white/80">BC Certified</span>
